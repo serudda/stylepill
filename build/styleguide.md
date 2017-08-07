@@ -77,7 +77,7 @@ Default invalid input styles. Use it adding the modifier: `.ma-input--invalid`
     </div>
 
 
-## Airbnb style navbar <a class='ma-btn ma-btn--small ma-btn--minimal' style='float: right;top: 16px;' href='https://s3.amazonaws.com/waysily-img/stylepill/airbnb-theme/aribnb-theme-buttons1.zip'>Download set</a>
+## Airbnb style navbar <a class='ma-btn ma-btn--small ma-btn--minimal' style='float: right;top: 16px;' href='https://s3.amazonaws.com/waysily-img/stylepill/airbnb-theme/airbnb-theme-subnavs1.zip'>Download set</a>
 
 ### Simple navbar
 
