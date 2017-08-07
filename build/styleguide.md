@@ -4,10 +4,6 @@
 
 A simple and minimalist button based on Airbnb primary color. Use it adding the modifier: `.ma-btn--primary`
 
-<button class="ma-btn ma-btn--small ma-btn--minimal">
-    Copy code
-</button>
-
     @example
     <button class="ma-btn ma-btn--small ma-btn--primary">
         Log in
@@ -18,10 +14,6 @@ A simple and minimalist button based on Airbnb primary color. Use it adding the 
 
 A simple and minimalist button based on Airbnb secondary color. Use it adding the modifier: `.ma-btn--secondary`
 
-<button class="ma-btn ma-btn--small ma-btn--minimal">
-    Copy code
-</button>
-
     @example
     <button class="ma-btn ma-btn--small ma-btn--secondary">
         Log in
@@ -31,10 +23,6 @@ A simple and minimalist button based on Airbnb secondary color. Use it adding th
 ### Primary Outline button
 
 A simple and minimalist outline button based on Airbnb primary color. Use it adding the modifier: `.ma-btn--primary-without-bg`
-
-<button class="ma-btn ma-btn--small ma-btn--minimal">
-    Copy code
-</button>
 
     @example
     <button class="ma-btn ma-btn--small ma-btn--primary-without-bg">
@@ -48,10 +36,6 @@ A simple and minimalist outline button based on Airbnb primary color. Use it add
 
 Small input commonly used by Airbnb on its forms such as edit profile, account, or setting. Use it adding the modifier: `.ma-input--small`
 
-<button class="ma-btn ma-btn--small ma-btn--minimal">
-    Copy code
-</button>
-
     @example.slim
     <div class="form-group">
         <label for="input1">Small Input Text</label>
@@ -63,10 +47,6 @@ Small input commonly used by Airbnb on its forms such as edit profile, account, 
 
 Default input commonly used by Airbnb on its forms such as edit profile, account, or setting. Use it adding the modifier: `.ma-input--default`
 
-<button class="ma-btn ma-btn--small ma-btn--minimal">
-    Copy code
-</button>
-
     @example.slim
     <div class="form-group">
         <label for="input1">Default Input Text</label>
@@ -77,10 +57,6 @@ Default input commonly used by Airbnb on its forms such as edit profile, account
 
 Large input commonly used by Airbnb on its forms such as edit profile, account, or setting. Use it adding the modifier: `.ma-input--large`
 
-<button class="ma-btn ma-btn--small ma-btn--minimal">
-    Copy code
-</button>
-
     @example.slim
     <div class="form-group">
         <label for="input1">Large Input Text</label>
@@ -90,10 +66,6 @@ Large input commonly used by Airbnb on its forms such as edit profile, account, 
 ### Default Invalid input
 
 Default invalid input styles. Use it adding the modifier: `.ma-input--invalid`
-
-<button class="ma-btn ma-btn--small ma-btn--minimal">
-    Copy code
-</button>
 
     @example.slim
     <div class="form-group">
@@ -110,10 +82,6 @@ Default invalid input styles. Use it adding the modifier: `.ma-input--invalid`
 ### Simple navbar
 
 A simple and beautiful navbar used by Airbnb commonly in 'room profile'. Use it adding the modifier: `.ma-subnav--simple`
-
-<button class="ma-btn ma-btn--small ma-btn--minimal">
-    Copy code
-</button>
 
     @example
     <div class="ma-subnav ma-subnav--simple">
@@ -155,10 +123,6 @@ A simple and beautiful navbar used by Airbnb commonly in 'room profile'. Use it 
 ### Tabs navbar
 
 This navbar is used by Airbnb commonly in front page to navigate each relevant section. Use it adding the modifier: `.ma-subnav--tabs`
-
-<button class="ma-btn ma-btn--small ma-btn--minimal">
-    Copy code
-</button>
 
     @example
     <div class="ma-subnav ma-subnav--tabs">
