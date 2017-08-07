@@ -1,4 +1,4 @@
-## Airbnb style buttons <button class="ma-btn ma-btn--small ma-btn--minimal" style="float: right;top: 16px;">Download set</button>
+## Airbnb style buttons <a class='ma-btn ma-btn--small ma-btn--minimal' style='float: right;top: 16px;' href='https://s3.amazonaws.com/waysily-img/stylepill/airbnb-theme/aribnb-theme-buttons1.zip'>Download set</a>
 
 ### Primary button
 
@@ -30,7 +30,7 @@ A simple and minimalist outline button based on Airbnb primary color. Use it add
     </button>
 
 
-## Airbnb style inputs <button class="ma-btn ma-btn--small ma-btn--minimal" style="float: right;top: 16px;">Download set</button>
+## Airbnb style inputs <a class='ma-btn ma-btn--small ma-btn--minimal' style='float: right;top: 16px;' href='https://s3.amazonaws.com/waysily-img/stylepill/airbnb-theme/aribnb-theme-buttons1.zip'>Download set</a>
 
 ### Small input
 
@@ -77,7 +77,7 @@ Default invalid input styles. Use it adding the modifier: `.ma-input--invalid`
     </div>
 
 
-## Airbnb style navbar <button class="ma-btn ma-btn--small ma-btn--minimal" style="float: right;top: 16px;">Download set</button>
+## Airbnb style navbar <a class='ma-btn ma-btn--small ma-btn--minimal' style='float: right;top: 16px;' href='https://s3.amazonaws.com/waysily-img/stylepill/airbnb-theme/aribnb-theme-buttons1.zip'>Download set</a>
 
 ### Simple navbar
 
