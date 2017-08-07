@@ -1,0 +1,46 @@
+/**********************************************************/
+/*                     INPUT TEXT                         */
+/**********************************************************/
+/* Input component */
+.ma-input {
+  border: 1px solid #AAA;
+  border-radius: 2px;
+  -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+  background-color: #FFF;
+  color: #484848;
+  display: block;
+  width: 100%; }
+  .ma-input:focus {
+    border-color: #008489;
+    outline: 0; }
+  .ma-input--small {
+    padding: 8px 10px;
+    font-size: 14px; }
+  .ma-input--default {
+    padding: 10px;
+    font-size: 16px; }
+  .ma-input--large {
+    padding: 13px;
+    font-size: 18px; }
+  .ma-input--invalid {
+    background-color: #FFF2EF;
+    border-color: #D93900; }
+
+/* Message error component */
+.ma-msg {
+  letter-spacing: 0;
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased; }
+  .ma-msg--small {
+    font-size: 15px; }
+  .ma-msg--alert {
+    color: #d93900; }
+
+/* Space helper */
+.space-top-1 {
+  margin-top: 6px; }

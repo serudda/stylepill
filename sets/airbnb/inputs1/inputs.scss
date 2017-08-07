@@ -1,0 +1,116 @@
+/**********************************************************/
+/*                     INPUT TEXT                         */
+/**********************************************************/
+
+/// VARIABLES
+$main-palette: (
+  secondary: #008489,
+);
+
+$white: #FFF;
+
+$global-font-sizes:(
+    small: 15px,
+);
+
+$input-border: 1px solid #AAA;
+$input-radius: 2px;
+$input-bg-color: $white;
+$input-invalid-bg-color: #FFF2EF;
+$input-invalid-border-color: #D93900;
+$input-font-color: #484848;
+$input-width: 100%;
+$input-paddings: (
+  small: 8px 10px,
+  default: 10px,
+  large: 13px,
+);
+
+$input-font-sizes: (
+  small: 14px,
+  default: 16px,
+  large: 18px,
+);
+
+$input-border-color-focus: map-get($main-palette, secondary);
+$input-outline-focus: 0;
+
+$msg-font-sizes: (
+  small: map-get($global-font-sizes, small),
+);
+$msg-font-weight: normal;
+$msg-font-colors: (
+    alert: #d93900,
+);
+
+/// END: VARIABLES
+
+
+/* Input component */
+.ma-input {
+    border: $input-border;
+    -webkit-border-radius: $input-radius;
+    -moz-border-radius: $input-radius;
+    border-radius: $input-radius;
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    background-color: $input-bg-color;
+    color: $input-font-color;
+    display: block;
+    width: $input-width;
+
+    &:focus {
+        border-color: $input-border-color-focus;
+        outline: $input-outline-focus;
+    }
+
+    &--small {
+        padding: map-get($input-paddings, small);
+        font-size: map-get($input-font-sizes, small);
+    }
+
+    &--default {
+        padding: map-get($input-paddings, default);
+        font-size: map-get($input-font-sizes, default);
+    }
+
+    &--large {
+        padding: map-get($input-paddings, large);
+        font-size: map-get($input-font-sizes, large);
+    }
+
+    &--invalid {
+        background-color: $input-invalid-bg-color;
+        border-color: $input-invalid-border-color;
+    }
+}
+
+/* Message error component */
+.ma-msg {
+    letter-spacing: 0;
+    font-style: normal;
+    font-weight: $msg-font-weight;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+
+
+    /// MESSAGE SIZES
+
+    &--small {
+        font-size: map-get($msg-font-sizes, small);
+    }
+
+
+    /// MESSAGE COLORS
+
+    &--alert {
+        color: map-get($msg-font-colors, alert);
+    }
+
+}
+
+/* Space helper */
+.space-top-1 {
+    margin-top: 6px;
+}

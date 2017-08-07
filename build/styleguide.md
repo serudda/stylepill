@@ -30,7 +30,7 @@ A simple and minimalist outline button based on Airbnb primary color. Use it add
     </button>
 
 
-## Airbnb style inputs <a class='ma-btn ma-btn--small ma-btn--minimal' style='float: right;top: 16px;' href='https://s3.amazonaws.com/waysily-img/stylepill/airbnb-theme/aribnb-theme-buttons1.zip'>Download set</a>
+## Airbnb style inputs <a class='ma-btn ma-btn--small ma-btn--minimal' style='float: right;top: 16px;' href='https://s3.amazonaws.com/waysily-img/stylepill/airbnb-theme/airbnb-theme-inputs1.zip'>Download set</a>
 
 ### Small input
 
