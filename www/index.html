@@ -1,0 +1,360 @@
+<!doctype html>
+<html class="sg">
+
+<head>
+  <meta charset="utf-8">
+  <title>Styledown</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styleguide.css">
+  <link rel="stylesheet" href="styleguide-reset.css">
+  <link rel="stylesheet" href="../../theme/app.min.css">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/styledown/styledown/v1.0.2/data/styledown.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro">
+  <script src="https://cdn.rawgit.com/styledown/styledown/v1.0.2/data/styledown.js"></script>
+</head>
+
+<body class="sg">
+  <div class="jumbotron jumbotron-styleguide">
+    <div class="container">
+      <h1 style="font-weight:400">Stylepill</h1>
+      <p class="ma-p ma-p--small">Each component is open source, 100% editable, written with Sass, and using BEM methodology.</p>
+      <p class="ma-p ma-p--default">Theme of the month:
+        <strong>Airbnb</strong>
+      </p>
+      <hr>
+      <p style="font-size:15px;font-weight:600" class="ma-p">Follow us on Twitter, we&apos;ll show you our works, triumphs, failures, 100% transparent.</p>
+      <p>
+        <a href="https://www.twitter.com/seruda" class="btn btn-default">@seruda</a>
+        <a href="https://www.twitter.com/rosa7082" class="btn btn-default">@rosa7082</a>
+      </p>
+      <p>
+        <a href="http://eepurl.com/cYzCeX" class="btn btn-default">Join to list</a>
+      </p>
+    </div>
+  </div>
+  <div class="container">
+    <div>
+      <section class="sg-section sg-section-airbnb-style-buttons">
+        <h2 id="airbnb-style-buttons" class="sg">Airbnb style buttons</h2>
+        <section class="sg-block sg-section-primary-button">
+          <div class="sg-text">
+            <h3 id="primary-button" class="sg">Primary button</h3>
+            <p class="sg">A simple and minimalist button based on Airbnb primary color. Use it adding the modifier:
+              <code class="sg">.ma-btn--primary</code>
+            </p>
+            <button class="ma-btn ma-btn--small ma-btn--minimal sg">
+              Copy code
+            </button>
+          </div>
+          <div class="sg-example">
+            <div class="sg-canvas">
+              <button class="ma-btn ma-btn--small ma-btn--primary">
+                Log in
+              </button>
+            </div><pre class="sg-code"><span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;ma-btn ma-btn--small ma-btn--primary&quot;</span>&gt;</span>
+  Log in
+<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span></pre>
+          </div>
+        </section>
+        <section class="sg-block sg-section-secondary-button">
+          <div class="sg-text">
+            <h3 id="secondary-button" class="sg">Secondary button</h3>
+            <p class="sg">A simple and minimalist button based on Airbnb secondary color. Use it adding the modifier:
+              <code class="sg">.ma-btn--secondary</code>
+            </p>
+            <button class="ma-btn ma-btn--small ma-btn--minimal sg">
+              Copy code
+            </button>
+          </div>
+          <div class="sg-example">
+            <div class="sg-canvas">
+              <button class="ma-btn ma-btn--small ma-btn--secondary">
+                Log in
+              </button>
+            </div><pre class="sg-code"><span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;ma-btn ma-btn--small ma-btn--secondary&quot;</span>&gt;</span>
+  Log in
+<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span></pre>
+          </div>
+        </section>
+        <section class="sg-block sg-section-primary-outline-button">
+          <div class="sg-text">
+            <h3 id="primary-outline-button" class="sg">Primary Outline button</h3>
+            <p class="sg">A simple and minimalist outline button based on Airbnb primary color. Use it adding the modifier:
+              <code class="sg">.ma-btn--primary-without-bg</code>
+            </p>
+            <button class="ma-btn ma-btn--small ma-btn--minimal sg">
+              Copy code
+            </button>
+          </div>
+          <div class="sg-example">
+            <div class="sg-canvas">
+              <button class="ma-btn ma-btn--small ma-btn--primary-without-bg">
+                Log in
+              </button>
+            </div><pre class="sg-code"><span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;ma-btn ma-btn--small ma-btn--primary-without-bg&quot;</span>&gt;</span>
+  Log in
+<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span></pre>
+          </div>
+        </section>
+      </section>
+
+      <section class="sg-section sg-section-airbnb-style-inputs">
+        <h2 id="airbnb-style-inputs" class="sg">Airbnb style inputs</h2>
+        <section class="sg-block sg-section-small-input">
+          <div class="sg-text">
+            <h3 id="small-input" class="sg">Small input</h3>
+            <p class="sg">Small input commonly used by Airbnb on its forms such as edit profile, account, or setting. Use it adding the modifier:
+              <code class="sg">.ma-input--small</code>
+            </p>
+            <button class="ma-btn ma-btn--small ma-btn--minimal sg">
+              Copy code
+            </button>
+          </div>
+          <div class="sg-example sg-slim">
+            <div class="sg-canvas">
+              <div class="form-group">
+                <label for="input1">Small Input Text</label>
+                <input id="input1" type="text" class="ma-input ma-input--small" placeholder="Name">
+              </div>
+            </div><pre class="sg-code"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;form-group&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">&quot;input1&quot;</span>&gt;</span>Small Input Text<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">&quot;input1&quot;</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;text&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;ma-input ma-input--small&quot;</span> <span class="hljs-attribute">placeholder</span>=<span class="hljs-value">&quot;Name&quot;</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
+          </div>
+        </section>
+        <section class="sg-block sg-section-default-input">
+          <div class="sg-text">
+            <h3 id="default-input" class="sg">Default input</h3>
+            <p class="sg">Default input commonly used by Airbnb on its forms such as edit profile, account, or setting. Use it adding the modifier:
+              <code class="sg">.ma-input--default</code>
+            </p>
+            <button class="ma-btn ma-btn--small ma-btn--minimal sg">
+              Copy code
+            </button>
+          </div>
+          <div class="sg-example sg-slim">
+            <div class="sg-canvas">
+              <div class="form-group">
+                <label for="input1">Default Input Text</label>
+                <input id="input1" type="text" class="ma-input ma-input--default" placeholder="Email Address">
+              </div>
+            </div><pre class="sg-code"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;form-group&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">&quot;input1&quot;</span>&gt;</span>Default Input Text<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">&quot;input1&quot;</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;text&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;ma-input ma-input--default&quot;</span> <span class="hljs-attribute">placeholder</span>=<span class="hljs-value">&quot;Email Address&quot;</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
+          </div>
+        </section>
+        <section class="sg-block sg-section-large-input">
+          <div class="sg-text">
+            <h3 id="large-input" class="sg">Large input</h3>
+            <p class="sg">Large input commonly used by Airbnb on its forms such as edit profile, account, or setting. Use it adding the modifier:
+              <code class="sg">.ma-input--large</code>
+            </p>
+            <button class="ma-btn ma-btn--small ma-btn--minimal sg">
+              Copy code
+            </button>
+          </div>
+          <div class="sg-example sg-slim">
+            <div class="sg-canvas">
+              <div class="form-group">
+                <label for="input1">Large Input Text</label>
+                <input id="input1" type="text" class="ma-input ma-input--large" placeholder="First Name">
+              </div>
+            </div><pre class="sg-code"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;form-group&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">&quot;input1&quot;</span>&gt;</span>Large Input Text<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">&quot;input1&quot;</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;text&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;ma-input ma-input--large&quot;</span> <span class="hljs-attribute">placeholder</span>=<span class="hljs-value">&quot;First Name&quot;</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
+          </div>
+        </section>
+        <section class="sg-block sg-section-default-invalid-input">
+          <div class="sg-text">
+            <h3 id="default-invalid-input" class="sg">Default Invalid input</h3>
+            <p class="sg">Default invalid input styles. Use it adding the modifier:
+              <code class="sg">.ma-input--invalid</code>
+            </p>
+            <button class="ma-btn ma-btn--small ma-btn--minimal sg">
+              Copy code
+            </button>
+          </div>
+          <div class="sg-example sg-slim">
+            <div class="sg-canvas">
+              <div class="form-group">
+                <label for="input5">Invalid Input Text</label>
+                <input id="input5" type="text" class="ma-input ma-input--default ma-input--invalid" placeholder="Invalid Input Text">
+                <p class="ma-p ma-p--small ma-p--alert font-weight-normal space-top-1">
+                  Name required.
+                </p>
+              </div>
+            </div><pre class="sg-code"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;form-group&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">&quot;input5&quot;</span>&gt;</span>Invalid Input Text<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">&quot;input5&quot;</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;text&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;ma-input ma-input--default ma-input--invalid&quot;</span> <span class="hljs-attribute">placeholder</span>=<span class="hljs-value">&quot;Invalid Input Text&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;ma-p ma-p--small ma-p--alert font-weight-normal space-top-1&quot;</span>&gt;</span>
+    Name required.
+  <span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
+          </div>
+        </section>
+      </section>
+
+      <section class="sg-section sg-section-airbnb-style-navbar">
+        <h2 id="airbnb-style-navbar" class="sg">Airbnb style navbar</h2>
+        <section class="sg-block sg-section-simple-navbar">
+          <div class="sg-text">
+            <h3 id="simple-navbar" class="sg">Simple navbar</h3>
+            <p class="sg">A simple and beautiful navbar used by Airbnb commonly in &apos;room profile&apos;. Use it adding the modifier:
+              <code class="sg">.ma-subnav--simple</code>
+            </p>
+            <button class="ma-btn ma-btn--small ma-btn--minimal sg">
+              Copy code
+            </button>
+          </div>
+          <div class="sg-example">
+            <div class="sg-canvas">
+              <div class="ma-subnav ma-subnav--simple">
+                <nav class="container">
+                  <div class="ma-subnav__item">
+                    <div class="content">
+                      <a href="">Overview</a>
+                    </div>
+                  </div>
+
+                  <span class="space-right-1 space-left-1">&#xB7;</span>
+
+                  <div class="ma-subnav__item">
+                    <div class="content">
+                      <a href="">Review</a>
+                    </div>
+                  </div>
+
+                  <span class="space-right-1 space-left-1">&#xB7;</span>
+
+                  <div class="ma-subnav__item">
+                    <div class="content">
+                      <a class="active" href="">The Host</a>
+                    </div>
+                  </div>
+
+                  <span class="space-right-1 space-left-1">&#xB7;</span>
+
+                  <div class="ma-subnav__item">
+                    <div class="content">
+                      <a href="">Location</a>
+                    </div>
+                  </div>
+
+                </nav>
+              </div>
+            </div><pre class="sg-code"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;ma-subnav ma-subnav--simple&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">nav</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;container&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;ma-subnav__item&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;content&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>&gt;</span>Overview<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;space-right-1 space-left-1&quot;</span>&gt;</span>&#xB7;<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;ma-subnav__item&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;content&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>&gt;</span>Review<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;space-right-1 space-left-1&quot;</span>&gt;</span>&#xB7;<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;ma-subnav__item&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;content&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;active&quot;</span> <span class="hljs-attribute">href</span>&gt;</span>The Host<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;space-right-1 space-left-1&quot;</span>&gt;</span>&#xB7;<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;ma-subnav__item&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;content&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>&gt;</span>Location<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;/<span class="hljs-title">nav</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
+          </div>
+        </section>
+        <section class="sg-block sg-section-tabs-navbar">
+          <div class="sg-text">
+            <h3 id="tabs-navbar" class="sg">Tabs navbar</h3>
+            <p class="sg">This navbar is used by Airbnb commonly in front page to navigate each relevant section. Use it adding the modifier:
+              <code class="sg">.ma-subnav--tabs</code>
+            </p>
+            <button class="ma-btn ma-btn--small ma-btn--minimal sg">
+              Copy code
+            </button>
+          </div>
+          <div class="sg-example">
+            <div class="sg-canvas">
+              <div class="ma-subnav ma-subnav--tabs">
+                <nav class="container">
+                  <div class="ma-subnav__item space-right-4">
+                    <div class="content">
+                      <a class="link-reset" href="">FOR YOU</a>
+                    </div>
+                  </div>
+
+                  <div class="ma-subnav__item space-right-4">
+                    <div class="content active">
+                      <a class="link-reset" href="">HOMES</a>
+                    </div>
+                  </div>
+
+                  <div class="ma-subnav__item space-right-4">
+                    <div class="content">
+                      <a class="link-reset" href="">EXPERIENCES</a>
+                    </div>
+                  </div>
+
+                  <div class="ma-subnav__item">
+                    <div class="content">
+                      <a class="link-reset" href="">PLACES</a>
+                    </div>
+                  </div>
+
+                </nav>
+              </div>
+            </div><pre class="sg-code"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;ma-subnav ma-subnav--tabs&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">nav</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;container&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;ma-subnav__item space-right-4&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;content&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;link-reset&quot;</span> <span class="hljs-attribute">href</span>&gt;</span>FOR YOU<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;ma-subnav__item space-right-4&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;content active&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;link-reset&quot;</span> <span class="hljs-attribute">href</span>&gt;</span>HOMES<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;ma-subnav__item space-right-4&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;content&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;link-reset&quot;</span> <span class="hljs-attribute">href</span>&gt;</span>EXPERIENCES<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;ma-subnav__item&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;content&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;link-reset&quot;</span> <span class="hljs-attribute">href</span>&gt;</span>PLACES<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;/<span class="hljs-title">nav</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
+          </div>
+        </section>
+      </section>
+
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,20 @@
+.sg-code.sg-hidden {
+    display: block!important;
+}
+
+.sg-expando {
+    display: none!important;
+}
+
+.jumbotron-styleguide .btn {
+    color: #3182B0!important;
+}
+
+.jumbotron-styleguide .btn:hover {
+    color: #FFF!important;
+    background-color: #3182B0!important;
+}
+
+.sg-block:last-of-type {
+    border-bottom: 0 hidden transparent!important;
+}
