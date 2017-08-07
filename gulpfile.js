@@ -14,6 +14,18 @@ var styledown = require('gulp-styledown');
 
 var app = express();
 
+/*Path Files*/
+var paths = {
+    index: 'www/index.html',
+    htmlTemplates: ['www/*.html'],
+    vendorStyles: [
+        'www/bower_components/animate.css/animate.min.css',
+        'www/bower_components/bootstrap/dist/css/bootstrap.min.css',
+    ],
+    inputSass: 'sets/**/*.scss',
+    outputSass: 'sets/'
+};
+
 
 /**
  * LOCAL SERVER
@@ -28,6 +40,36 @@ gulp.task('webserver', function() {
     },
     fallback: 'index.html'
   });
+});
+
+/**
+ * SASS to CSS - based on http://www.sitepoint.com/simple-gulpy-workflow-sass/
+ * @desc This task take app.scss and transform this to .css,
+         after that put each new .css into App_Web -> dist -> styles
+ */
+
+var sassOptions = {
+    errLogToConsole: true,
+    outputStyle: 'expanded'
+};
+
+gulp.task('sass-min', function() {
+  gulp
+    .src(paths.inputSass)
+    .pipe(sass(sassOptions).on('error', sass.logError))
+    .pipe(rename('button.min.css'))
+    .pipe(autoprefixer())
+    .pipe(gulp.dest(paths.outputSass))
+    .pipe(connect.reload());
+});
+
+gulp.task('sass', function () {
+  gulp
+    .src(paths.inputSass)
+    .pipe(sass().on('error', sass.logError))
+    .pipe(autoprefixer())
+    .pipe(gulp.dest(paths.outputSass))
+    .pipe(connect.reload());
 });
 
 /**
@@ -51,8 +93,9 @@ gulp.task('styleguide', function () {
  */
 
 gulp.task('watch', function() {
+    gulp.watch(paths.inputSass, ['sass']);
     gulp.watch('build/styleguide.md', ['styleguide']);
 });
 
 /* LAUNCH LOCALSERVER */
-gulp.task('start', ['webserver', 'styleguide', 'watch']);
+gulp.task('start', ['sass', 'webserver', 'styleguide', 'watch']);
