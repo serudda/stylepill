@@ -14,18 +14,6 @@ var styledown = require('gulp-styledown');
 
 var app = express();
 
-/*Path Files*/
-var paths = {
-    index: 'www/index.html',
-    htmlTemplates: ['www/*.html'],
-    vendorStyles: [
-        'www/bower_components/animate.css/animate.min.css',
-        'www/bower_components/bootstrap/dist/css/bootstrap.min.css',
-    ],
-    inputSass: 'www/theme/**/*.scss',
-    outputSass: 'www/theme/',
-    sassdocOptions: {dest: './www/css/doc'}
-};
 
 /**
  * LOCAL SERVER
@@ -34,90 +22,25 @@ var paths = {
 
 gulp.task('webserver', function() {
   connect.server({
-    root: 'www',
     livereload: true,
     middleware: function(connect, opt) {
       return [app];
     },
-    fallback: 'www/index.html'
+    fallback: 'index.html'
   });
 });
 
 /**
- * SASS to CSS - based on http://www.sitepoint.com/simple-gulpy-workflow-sass/
- * @desc This task take app.scss and transform this to .css,
-         after that put each new .css into App_Web -> dist -> styles
+ * STYLEGUIDE
+ * @desc This task is the responsible to create styleguide doc
  */
-
-var sassOptions = {
-    outputStyle: 'compressed',
-    errLogToConsole: true
-};
-
-gulp.task('sass-min', function() {
-  gulp
-    .src(paths.inputSass)
-    .pipe(sourcemaps.init())
-    .pipe(sass(sassOptions).on('error', sass.logError))
-    .pipe(rename('app.min.css'))
-    .pipe(autoprefixer())
-    .pipe(sourcemaps.write())
-    .pipe(gulp.dest(paths.outputSass))
-    .pipe(connect.reload());
-});
-
-gulp.task('sass', function () {
-  gulp
-    .src(paths.inputSass)
-    .pipe(sourcemaps.init())
-    .pipe(sass().on('error', sass.logError))
-    .pipe(autoprefixer())
-    .pipe(sourcemaps.write())
-    .pipe(gulp.dest(paths.outputSass))
-    .pipe(connect.reload());
-});
-
-/**
- * HTML RELOAD
- * @desc This task is the responsible to reload browser when one html has changed
- */
-
-gulp.task('html', function () {
-  gulp.src(paths.htmlTemplates)
-    .pipe(connect.reload());
-});
-
-/**
- * BUILD VENDOR CSS
- * @desc This task is responsible for building vendor styles to one vendor css
- */
-
-gulp.task('vendorCSS', function () {
-  return gulp.src(paths.vendorStyles)
-    .pipe(concat('vendor.min.css'))
-    .pipe(gulp.dest('www/build/css'));
-});
-
-/**
- * BUILD BOWER JS
- * @desc This task is responsible for building vendor js based on bower files
- */
-
-gulp.task('bowerJS', function () {
-  return gulp.src(lib.ext('js').files)
-    .pipe(concat('vendor.min.js'))
-    .pipe(uglify())
-    .pipe(gulp.dest('www/build/js'));
-});
-
 
 gulp.task('styleguide', function () {
-    return gulp.src('www/build/styleguide/styleguide.md')
+    return gulp.src('build/styleguide.md')
         .pipe(styledown({
-            config: 'www/build/styleguide/config.md',
-            filename: 'styleguide.html'
+            filename: 'index.html'
         }))
-        .pipe(gulp.dest('www/build/styleguide/'));
+        .pipe(gulp.dest(''));
 });
 
 /**
@@ -128,12 +51,8 @@ gulp.task('styleguide', function () {
  */
 
 gulp.task('watch', function() {
-    gulp.watch(paths.inputSass, ['sass', 'sass-min', 'vendorCSS']);
-    gulp.watch([paths.htmlTemplates], ['html']);
-    gulp.watch('www/build/styleguide/styleguide.md', ['styleguide']);
+    gulp.watch('build/styleguide.md', ['styleguide']);
 });
 
-/* BUILD VENDOR */
-gulp.task('build-vendor', ['bowerJS', 'vendorCSS']);
 /* LAUNCH LOCALSERVER */
-gulp.task('start', ['sass', 'sass-min', 'html', 'webserver', 'build-vendor', 'styleguide', 'watch']);
+gulp.task('start', ['webserver', 'styleguide', 'watch']);

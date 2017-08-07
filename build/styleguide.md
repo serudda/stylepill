@@ -196,9 +196,9 @@ This navbar is used by Airbnb commonly in front page to navigate each relevant s
 ### Head
     meta(name="viewport" content="width=device-width, initial-scale=1")
     link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css')
-    link(rel='stylesheet' href="styleguide.css")
-    link(rel='stylesheet' href="styleguide-reset.css")
-    link(rel='stylesheet' href="../../theme/app.min.css")
+    link(rel='stylesheet' href='build/styles/styleguide.css')
+    link(rel='stylesheet' href='build/styles/styleguide-reset.css')
+    link(rel='stylesheet' href='build/styles/app.min.css')
     link(rel='stylesheet' href='https://cdn.rawgit.com/styledown/styledown/v1.0.2/data/styledown.css')
     link(rel='stylesheet' href='https://fonts.googleapis.com/css?family=Source+Sans+Pro')
     script(src='https://cdn.rawgit.com/styledown/styledown/v1.0.2/data/styledown.js')
