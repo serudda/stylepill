@@ -155,7 +155,7 @@ This navbar is used by Airbnb commonly in front page to navigate each relevant s
     </div>
 
 
-## The next set arrives this Friday!
+## The next set will arrive this Friday!
 
 <br>
 
