@@ -10,9 +10,15 @@ This set contains:
 - Google button: ma-btn--google
 
 Use:
+There's a '_button-core' sass file to group button base styles (sizes, colors, resets, etc.)
+The 'buttons2' sass file import button-core to include its styles.
+
 You have to use the class: 'ma-btn' to get base button styles, and add the respective modifier.
 
 You can find the list of html components on 'buttons2.html' file.
+
+Note:
+Facebook button and Helpful button use fontawesome icon.
 
 
 License
