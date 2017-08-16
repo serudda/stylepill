@@ -1,0 +1,97 @@
+/**********************************************************/
+/*                        BUTTONS                         */
+/**********************************************************/
+.space-left-2 {
+  margin-left: 12px; }
+
+.ma-btn {
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 4px;
+  border: 2px solid transparent;
+  width: auto;
+  -webkit-font-smoothing: antialiased; }
+  .ma-btn--small {
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 15px; }
+  .ma-btn--default {
+    padding: 12px 22px;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 22px; }
+  .ma-btn--large {
+    padding: 12px 24px;
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 22px; }
+  .ma-btn--block {
+    display: block;
+    white-space: normal;
+    width: 100%; }
+
+.ma-btn[disabled] {
+  opacity: 0.25;
+  cursor: not-allowed; }
+
+.ma-btn--helpful {
+  border: 1px solid #C4C4C4;
+  overflow: hidden;
+  background: #FFF; }
+  .ma-btn--helpful--small {
+    padding: 4px 12px; }
+  .ma-btn--helpful--primary {
+    color: #FF5A5F; }
+    .ma-btn--helpful--primary:hover {
+      border-color: #FF5A5F; }
+  .ma-btn--helpful--secondary {
+    color: #008489; }
+    .ma-btn--helpful--secondary:hover {
+      border-color: #008489; }
+  .ma-btn--helpful--minimal {
+    color: #767676; }
+    .ma-btn--helpful--minimal:hover {
+      background-color: #f5f5f5; }
+  .ma-btn--helpful i {
+    font-size: 15px; }
+  .ma-btn--helpful__text {
+    font-size: 15px;
+    padding-left: 10px;
+    display: inline;
+    font-weight: normal; }
+  .ma-btn--helpful__count {
+    font-size: 14px;
+    border-left: 1px solid #dce0e0;
+    margin-left: 10px;
+    padding-left: 10px;
+    display: inline-block;
+    overflow: hidden;
+    font-weight: 700;
+    vertical-align: bottom; }
+
+.ma-btn--facebook {
+  color: #FFF;
+  background-color: #4568b2; }
+
+.ma-btn--facebook .ma-btn__content {
+  margin: 0px auto;
+  display: table; }
+  .ma-btn--facebook .ma-btn__content__icon-container {
+    display: table-cell;
+    vertical-align: middle; }
+
+.ma-btn--google {
+  color: #484848;
+  background-color: #FFF;
+  border-color: #484848; }
+
+.ma-btn--google .ma-btn__content {
+  margin: 0px auto;
+  display: table; }
+  .ma-btn--google .ma-btn__content__icon-container {
+    display: table-cell;
+    vertical-align: middle; }

@@ -1,0 +1,166 @@
+/**********************************************************/
+/*                        BUTTONS                         */
+/**********************************************************/
+
+/// Import button core styles
+@import 'button-core';
+
+
+/// VARIABLES
+
+$white: #FFF;
+
+$main-palette: (
+  primary: #FF5A5F,
+  secondary: #008489,
+);
+
+$button-bg-color: (
+    facebook: #4568b2,
+    google: $white,
+);
+
+$button-font-colors: (
+    minimal: #484848,
+    facebook: $white,
+    google: #484848,
+);
+
+$button-border-colors: (
+    minimal: #C4C4C4,
+    facebook: transparent,
+    google: #484848,
+);
+
+$button-helpful-font-color: #767676;
+$button-helpful-bg-color: $white;
+$button-helpful-bg-color-hover: #f5f5f5;
+$button-helpful-colors: (
+    primary: map-get($main-palette, primary),
+    secondary: map-get($main-palette, secondary),
+    minimal: $button-helpful-font-color,
+);
+$button-helpful-paddings: (
+    small: 4px 12px,
+);
+$button-helpful-font-sizes: (
+    icon: 15px,
+    text: 15px,
+    count: 14px,
+);
+$button-helpful-text-padding: 10px;
+$button-helpful-count-padding: 10px;
+$button-helpful-count-margin: 10px;
+$button-helpful-count-border-color: #dce0e0;
+$button-helpful-count-font-weight: $global-font-weight;
+
+
+/// END: VARIABLES
+
+
+.ma-btn {
+
+    // Helpful Button
+    &--helpful {
+        border: 1px solid map-get($button-border-colors, minimal);
+        overflow: hidden;
+        background: $button-helpful-bg-color;
+
+        // Helpful size
+
+        &--small {
+            padding: map-get($button-helpful-paddings, small);
+        }
+
+        // Helpful color
+
+        &--primary {
+            color: map-get($button-helpful-colors, primary);
+
+            &:hover {
+                border-color: map-get($button-helpful-colors, primary);
+            }
+        }
+
+        &--secondary {
+            color: map-get($button-helpful-colors, secondary);
+
+            &:hover {
+                border-color: map-get($button-helpful-colors, secondary);
+            }
+        }
+
+        &--minimal {
+            color: map-get($button-helpful-colors, minimal);
+
+            &:hover {
+                background-color: $button-helpful-bg-color-hover;
+            }
+        }
+
+
+        // Helpful elements
+
+        i {
+            font-size: map-get($button-helpful-font-sizes, icon);
+        }
+
+        &__text {
+            font-size: map-get($button-helpful-font-sizes, text);
+            padding-left: $button-helpful-text-padding;
+            display: inline;
+            font-weight: normal;
+        }
+
+        &__count {
+            font-size: map-get($button-helpful-font-sizes, count);
+            border-left: 1px solid $button-helpful-count-border-color;
+            margin-left: $button-helpful-count-margin;
+            padding-left: $button-helpful-count-padding;
+            display: inline-block;
+            overflow: hidden;
+            font-weight: $button-helpful-count-font-weight;
+            vertical-align: bottom;
+        }
+    }
+
+
+    // Facebook Button
+    &--facebook {
+        color: map-get($button-font-colors, facebook);
+        background-color: map-get($button-bg-color, facebook);
+    }
+
+    &--facebook & {
+        &__content {
+            margin: 0px auto;
+            display: table;
+
+            &__icon-container {
+                display: table-cell;
+                vertical-align: middle;
+            }
+        }
+    }
+
+
+    // Google Button
+    &--google {
+        color: map-get($button-font-colors, google);
+        background-color: map-get($button-bg-color, google);
+        border-color: map-get($button-border-colors, google);
+    }
+
+    &--google & {
+        &__content {
+            margin: 0px auto;
+            display: table;
+
+            &__icon-container {
+                display: table-cell;
+                vertical-align: middle;
+            }
+        }
+    }
+
+}
