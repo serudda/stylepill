@@ -1,3 +1,9 @@
+<style>
+body {
+    overflow-x: hidden;
+}
+</style>
+
 ## Set #1: Airbnb main buttons <a class='ma-btn ma-btn--small ma-btn--minimal' style='float: right;top: 16px;' href='https://s3.amazonaws.com/waysily-img/stylepill/airbnb-theme/aribnb-theme-buttons1.zip'>Download set</a> <div style="font-size:20px;color:#FF5A5F;">Wednesday, 26 Jul 2017</div>
 
 ### Primary button

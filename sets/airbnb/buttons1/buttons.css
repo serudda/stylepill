@@ -1,6 +1,54 @@
 /**********************************************************/
 /*                        BUTTONS                         */
 /**********************************************************/
+.space-left-2 {
+  margin-left: 12px;
+}
+
+.ma-btn {
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  border: 2px solid;
+  width: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+.ma-btn--small {
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 15px;
+}
+
+.ma-btn--default {
+  padding: 12px 22px;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 22px;
+}
+
+.ma-btn--large {
+  padding: 12px 24px;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 22px;
+}
+
+.ma-btn--block {
+  display: block;
+  white-space: normal;
+  width: 100%;
+}
+
+.ma-btn[disabled] {
+  opacity: 0.25;
+  cursor: not-allowed;
+}
+
 .ma-btn--primary {
   background: 0 0;
   color: #FFF;

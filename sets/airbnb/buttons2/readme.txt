@@ -11,7 +11,7 @@ This set contains:
 
 Use:
 There's a '_button-core' sass file to group button base styles (sizes, colors, resets, etc.)
-The 'buttons2' sass file import button-core to include its styles.
+The 'buttons2' sass file import button-core to include these styles.
 
 You have to use the class: 'ma-btn' to get base button styles, and add the respective modifier.
 

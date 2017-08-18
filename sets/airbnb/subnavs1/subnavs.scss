@@ -65,7 +65,7 @@ $subnav-tabs-item-active-border-bottom-hover: 2px solid map-get($main-palette, s
 
     ///SUBNAV_MODIFIERS
 
-    /* Subnav Simple */
+    /// Subnav Simple
     &--simple & {
         height: $subnav-height;
 
@@ -103,7 +103,7 @@ $subnav-tabs-item-active-border-bottom-hover: 2px solid map-get($main-palette, s
     }
 
 
-    /* Subnav Tabs */
+    /// Subnav Tabs 
     &--tabs & {
 
         &__item {

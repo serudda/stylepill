@@ -10,6 +10,9 @@ This set contains:
 - Primary Outline button: ma-btn--primary-without-bg
 
 Use:
+There's a '_button-core' sass file to group button base styles (sizes, colors, resets, etc.)
+The 'buttons' sass file import button-core to include these styles.
+
 You have to use the class: 'ma-btn' to get base button styles, and add the respective modifier.
 
 You can find the list of html components on 'buttons.html' file.
