@@ -4,7 +4,7 @@ body {
 }
 </style>
 
-## Set #1: Airbnb main buttons <a class='ma-btn ma-btn--small ma-btn--minimal' style='float: right;top: 16px;' href='https://s3.amazonaws.com/waysily-img/stylepill/airbnb-theme/aribnb-theme-buttons1.zip'>Download set</a> <div style="font-size:20px;color:#FF5A5F;">Wednesday, 26 Jul 2017</div>
+## Set #1: Airbnb main buttons <a class='ma-btn ma-btn--small ma-btn--minimal' style='float: right;top: 16px;' href='http://bit.ly/2vQJzLV'>Download set</a> <div style="font-size:20px;color:#FF5A5F;">Wednesday, 26 Jul 2017</div>
 
 ### Primary button
 
@@ -36,7 +36,7 @@ A simple and minimalist outline button based on Airbnb primary color. Use it add
     </button>
 
 
-## Set #2: Airbnb main inputs  <a class='ma-btn ma-btn--small ma-btn--minimal' style='float: right;top: 16px;' href='https://s3.amazonaws.com/waysily-img/stylepill/airbnb-theme/airbnb-theme-inputs1.zip'>Download set</a> <div style="font-size:20px;color:#FF5A5F;">Wednesday, 2 Aug 2017</div>
+## Set #2: Airbnb main inputs  <a class='ma-btn ma-btn--small ma-btn--minimal' style='float: right;top: 16px;' href='http://bit.ly/2v9aOj5'>Download set</a> <div style="font-size:20px;color:#FF5A5F;">Wednesday, 2 Aug 2017</div>
 
 ### Small input
 
@@ -83,7 +83,7 @@ Default invalid input styles. Use it adding the modifier: `.ma-input--invalid`
     </div>
 
 
-## Set #3: Airbnb main subnavs <a class='ma-btn ma-btn--small ma-btn--minimal' style='float: right;top: 16px;' href='https://s3.amazonaws.com/waysily-img/stylepill/airbnb-theme/airbnb-theme-subnavs1.zip'>Download set</a> <div style="font-size:20px;color:#FF5A5F;">Wednesday, 9 Aug 2017</div>
+## Set #3: Airbnb main subnavs <a class='ma-btn ma-btn--small ma-btn--minimal' style='float: right;top: 16px;' href='http://bit.ly/2wpxCzp'>Download set</a> <div style="font-size:20px;color:#FF5A5F;">Wednesday, 9 Aug 2017</div>
 
 ### Simple navbar
 
@@ -161,7 +161,7 @@ This navbar is used by Airbnb commonly in front page to navigate each relevant s
     </div>
 
 
-## Set #4: Airbnb social buttons & helpful buttons<a class='ma-btn ma-btn--small ma-btn--minimal' style='float: right;top: 16px;' href='https://s3.amazonaws.com/waysily-img/stylepill/airbnb-theme/airbnb-theme-buttons2.zip'>Download set</a> <div style="font-size:20px;color:#FF5A5F;">Wednesday, 16 Aug 2017</div>
+## Set #4: Airbnb social buttons & helpful buttons<a class='ma-btn ma-btn--small ma-btn--minimal' style='float: right;top: 16px;' href='http://bit.ly/2uQ44ab'>Download set</a> <div style="font-size:20px;color:#FF5A5F;">Wednesday, 16 Aug 2017</div>
 
 ### Facebook button
 
