@@ -23,7 +23,8 @@ var paths = {
         'www/bower_components/bootstrap/dist/css/bootstrap.min.css',
     ],
     inputSass: 'sets/**/*.scss',
-    outputSass: 'sets/'
+    outputSass: 'sets/',
+    outputSassMin: 'build/styles/'
 };
 
 
@@ -56,17 +57,17 @@ var sassOptions = {
 gulp.task('sass-min', function() {
   gulp
     .src(paths.inputSass)
-    .pipe(sass(sassOptions).on('error', sass.logError))
-    .pipe(rename('button.min.css'))
+    .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
     .pipe(autoprefixer())
-    .pipe(gulp.dest(paths.outputSass))
+    .pipe(concat('app.min.css'))
+    .pipe(gulp.dest(paths.outputSassMin))
     .pipe(connect.reload());
 });
 
 gulp.task('sass', function () {
   gulp
     .src(paths.inputSass)
-    .pipe(sass().on('error', sass.logError))
+    .pipe(sass(sassOptions).on('error', sass.logError))
     .pipe(autoprefixer())
     .pipe(gulp.dest(paths.outputSass))
     .pipe(connect.reload());

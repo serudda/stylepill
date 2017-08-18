@@ -1,4 +1,4 @@
-## Set #1: Airbnb main buttons <a class='ma-btn ma-btn--small ma-btn--minimal' style='float: right;top: 16px;' href='https://s3.amazonaws.com/waysily-img/stylepill/airbnb-theme/aribnb-theme-buttons1.zip'>Download set</a>
+## Set #1: Airbnb main buttons <a class='ma-btn ma-btn--small ma-btn--minimal' style='float: right;top: 16px;' href='https://s3.amazonaws.com/waysily-img/stylepill/airbnb-theme/aribnb-theme-buttons1.zip'>Download set</a> <div style="font-size:20px;color:#FF5A5F;">Wednesday, 26 Jul 2017</div>
 
 ### Primary button
 
@@ -30,7 +30,7 @@ A simple and minimalist outline button based on Airbnb primary color. Use it add
     </button>
 
 
-## Set #2: Airbnb main inputs <a class='ma-btn ma-btn--small ma-btn--minimal' style='float: right;top: 16px;' href='https://s3.amazonaws.com/waysily-img/stylepill/airbnb-theme/airbnb-theme-inputs1.zip'>Download set</a>
+## Set #2: Airbnb main inputs  <a class='ma-btn ma-btn--small ma-btn--minimal' style='float: right;top: 16px;' href='https://s3.amazonaws.com/waysily-img/stylepill/airbnb-theme/airbnb-theme-inputs1.zip'>Download set</a> <div style="font-size:20px;color:#FF5A5F;">Wednesday, 2 Aug 2017</div>
 
 ### Small input
 
@@ -71,13 +71,13 @@ Default invalid input styles. Use it adding the modifier: `.ma-input--invalid`
     <div class="form-group">
         <label for="input5">Invalid Input Text</label>
         <input id="input5" type="text" class="ma-input ma-input--default ma-input--invalid" placeholder="Invalid Input Text">
-        <p class="ma-p ma-p--small ma-p--alert font-weight-normal space-top-1">
+        <p class="ma-msg ma-msg--small ma-msg--alert space-top-1">
             Name required.
         </p>
     </div>
 
 
-## Set #3: Airbnb main subnavs <a class='ma-btn ma-btn--small ma-btn--minimal' style='float: right;top: 16px;' href='https://s3.amazonaws.com/waysily-img/stylepill/airbnb-theme/airbnb-theme-subnavs1.zip'>Download set</a>
+## Set #3: Airbnb main subnavs <a class='ma-btn ma-btn--small ma-btn--minimal' style='float: right;top: 16px;' href='https://s3.amazonaws.com/waysily-img/stylepill/airbnb-theme/airbnb-theme-subnavs1.zip'>Download set</a> <div style="font-size:20px;color:#FF5A5F;">Wednesday, 9 Aug 2017</div>
 
 ### Simple navbar
 
@@ -155,7 +155,78 @@ This navbar is used by Airbnb commonly in front page to navigate each relevant s
     </div>
 
 
-## The next set will arrive this Wednesday!
+## Set #4: Airbnb social buttons & helpful buttons<a class='ma-btn ma-btn--small ma-btn--minimal' style='float: right;top: 16px;' href='https://s3.amazonaws.com/waysily-img/stylepill/airbnb-theme/airbnb-theme-buttons2.zip'>Download set</a> <div style="font-size:20px;color:#FF5A5F;">Wednesday, 16 Aug 2017</div>
+
+### Facebook button
+
+A simple and minimalist Facebook button based on Airbnb theme. Use it adding the modifier: `.ma-btn--facebook`
+
+    @example
+    <button class="ma-btn ma-btn--default ma-btn--facebook">
+        <div class="ma-btn__content">
+            <div class="ma-btn__content__icon-container">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+            </div>
+            <div class="space-left-2">
+                <span>Log in with Facebook</span>
+            </div>
+        </div>
+    </button>
+
+
+### Google button
+
+A simple and minimalist Google button based on Airbnb theme. Use it adding the modifier: `.ma-btn--google`
+
+    @example
+    <button class="ma-btn ma-btn--default ma-btn--google">
+        <div class="ma-btn__content">
+            <div class="ma-btn__content__icon-container">
+                <!-- Google icon SVG -->
+                <i class="google-icon"></i>
+            </div>
+            <div class="space-left-2">
+                <span>Log in with Google</span>
+            </div>
+        </div>
+    </button>
+
+
+### Helpful button
+
+A button used by Airbnb on Reviews and recommendations section. Use it adding the modifier: `.ma-btn--helpful` adding size and type modifiers (e.g. `.ma-btn--small`, `.ma-btn--primary`)
+
+    @example
+    <!-- Helpful Primary Button -->
+    <button class="ma-btn ma-btn--helpful ma-btn--helpful--small ma-btn--helpful--primary">
+        <span>
+            <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+            <div class="ma-btn--helpful__text">Helpful</div>
+            <div class="ma-btn--helpful__count">3</div>
+        </span>
+    </button>
+
+
+    <!-- Helpful Secondary Button -->
+    <button class="ma-btn ma-btn--helpful ma-btn--helpful--small ma-btn--helpful--secondary">
+        <span>
+            <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+            <div class="ma-btn--helpful__text">Helpful</div>
+            <div class="ma-btn--helpful__count">3</div>
+        </span>
+    </button>
+
+
+    <!-- Helpful Minimal Button -->
+    <button class="ma-btn ma-btn--helpful ma-btn--helpful--small ma-btn--helpful--minimal">
+        <span>
+            <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+            <div class="ma-btn--helpful__text">Helpful</div>
+            <div class="ma-btn--helpful__count">3</div>
+        </span>
+    </button>
+
+## The next set will arrive the next Wednesday, 23 Aug 2017!
 
 <br>
 
@@ -170,6 +241,7 @@ This navbar is used by Airbnb commonly in front page to navigate each relevant s
     link(rel='stylesheet' href='https://cdn.rawgit.com/styledown/styledown/v1.0.2/data/styledown.css')
     link(rel='stylesheet' href='https://fonts.googleapis.com/css?family=Source+Sans+Pro')
     script(src='https://cdn.rawgit.com/styledown/styledown/v1.0.2/data/styledown.js')
+    script(src='https://use.fontawesome.com/99e7a6e2c6.js')
 
 ### Body
 

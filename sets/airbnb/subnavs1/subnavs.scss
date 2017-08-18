@@ -46,6 +46,14 @@ $subnav-tabs-item-active-border-bottom-hover: 2px solid map-get($main-palette, s
 
 /// END: VARIABLES
 
+.space-right-1 {margin-right: 6px;}
+.space-right-4 {margin-right: 24px;}
+.space-left-1 {margin-left: 6px;}
+
+.link-reset {
+    color: inherit;
+    text-decoration: none !important;
+}
 
 .ma-subnav {
     background: $subnav-bg-color;
