@@ -192,6 +192,6 @@ This navbar is used by Airbnb commonly in front page to navigate each relevant s
                 a.btn.btn-default(href="https://www.twitter.com/seruda") @seruda
                 a.btn.btn-default(href="https://www.twitter.com/rosa7082") @rosa7082
             p   
-                a.btn.btn-default(href="http://eepurl.com/cYzCeX") Join to list
+                a.btn.btn-default(href="http://eepurl.com/cYzCeX") Join list
     .container
         div(sg-content)
