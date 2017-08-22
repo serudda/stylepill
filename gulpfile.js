@@ -94,9 +94,9 @@ gulp.task('styleguide', function () {
  */
 
 gulp.task('watch', function() {
-    gulp.watch(paths.inputSass, ['sass']);
+    gulp.watch(paths.inputSass, ['sass', 'sass-min']);
     gulp.watch('build/styleguide.md', ['styleguide']);
 });
 
 /* LAUNCH LOCALSERVER */
-gulp.task('start', ['sass', 'webserver', 'styleguide', 'watch']);
+gulp.task('start', ['sass', 'sass-min', 'webserver', 'styleguide', 'watch']);

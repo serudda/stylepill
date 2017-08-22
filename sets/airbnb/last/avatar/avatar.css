@@ -1,0 +1,57 @@
+/**********************************************************/
+/*                     AVATAR PROFILE                     */
+/**********************************************************/
+.round {
+  border-radius: 50%;
+}
+
+.ma-avatar {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  background-color: #767676;
+  background: url("../images/photo-default.svg") 0 0 no-repeat;
+  background-size: cover;
+}
+
+.ma-avatar--tiny {
+  height: 32px;
+  width: 32px;
+}
+
+.ma-avatar--small {
+  height: 70px;
+  width: 70px;
+}
+
+.ma-avatar--default {
+  width: 120px;
+  height: 120px;
+}
+
+.ma-avatar--large {
+  width: 180px;
+  height: 180px;
+}
+
+.ma-avatar--empty {
+  background: #767676;
+}
+
+.ma-avatar--border-primary {
+  border: 2px solid #FF5A5F;
+}
+
+.ma-avatar--border-secondary {
+  border: 2px solid #008489;
+}
+
+.ma-avatar--border-minimal {
+  border: 2px solid #767676;
+}
+
+.ma-avatar img {
+  text-indent: -9999px;
+}
