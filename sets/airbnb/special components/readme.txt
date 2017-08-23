@@ -11,7 +11,7 @@ This set contains:
 - Special Search Box: ma-searchbox
 
 Use:
-Unfortunately this the last set of components of the Airbnb theme,
+This the last set of components of the Airbnb theme,
 so we decided to add very special components: the main header of Airbnb Homepage,
 all types of user profile avatar, and a very cute searchbox that is used by Airbnb
 on its homepage.
