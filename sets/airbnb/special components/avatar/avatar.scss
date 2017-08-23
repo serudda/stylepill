@@ -11,6 +11,7 @@ $main-palette: (
 
 $light-dark: #767676;
 
+///NOTE: Put this image into images folder in your project, and change the path here.
 $avatar-default-path: '../images/photo-default.svg';
 $avatar-sizes: (
     tiny: 32px,
@@ -96,7 +97,7 @@ $avatar-bg: $light-dark;
     }
 
     /// ELEMENTS
-    
+
     img {
         text-indent:-9999px;
     }
