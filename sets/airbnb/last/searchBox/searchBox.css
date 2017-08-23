@@ -1,0 +1,57 @@
+/**********************************************************/
+/*                       SEARCHBOX                        */
+/**********************************************************/
+.ma-searchbox {
+  font-size: 19px;
+  line-height: 24px;
+  letter-spacing: undefined;
+  color: #484848;
+  border-radius: 4px;
+  border: 1px solid #DBDBDB;
+  -webkit-box-shadow: 0 1px 3px 0px rgba(0, 0, 0, 0.08);
+          box-shadow: 0 1px 3px 0px rgba(0, 0, 0, 0.08);
+  padding: 0;
+  display: table;
+  table-layout: fixed;
+  position: relative;
+  overflow: hidden;
+}
+
+.ma-searchbox__icon-container {
+  float: left;
+  padding: 7px 7px 2px 7px;
+  position: absolute;
+}
+
+.ma-searchbox__icon-container .feather-search {
+  height: 20px;
+  width: 20px;
+  stroke-width: 1;
+}
+
+.ma-searchbox__input-container {
+  overflow: hidden;
+  position: relative;
+}
+
+.ma-searchbox__input-container__input {
+  font-family: "Lato", "Helvetica Neue", Helvetica, "Roboto", sans-serif;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.2px;
+  color: #484848;
+  background-color: transparent;
+  border: 0 hidden transparent;
+  padding: 8px 8px 8px 35px;
+  text-overflow: ellipsis;
+  outline: none;
+  width: 250px;
+  -webkit-transition: width 0.3s ease-in-out;
+  transition: width 0.3s ease-in-out;
+}
+
+.ma-searchbox__input-container__input:focus {
+  width: 500px;
+  border-bottom: 2px solid #008489;
+  outline: none;
+}

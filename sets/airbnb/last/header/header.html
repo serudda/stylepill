@@ -1,8 +1,12 @@
 <! Last Set: Airbnb header >
 
+<!-- Lato Font -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+
+<! HEADER >
 <header class="ma-header ma-header--large">
 
-    <! Logo >
+    <!-- Logo -->
     <div class="ma-header__logo-container">
         <a class="link-reset">
             <div class="content">
@@ -11,7 +15,7 @@
         </a>
     </div>
 
-    <! Search box >
+    <!-- Search box -->
     <div class="ma-header__search-container">
         <form class="form-content hidden-xs">
             <div class="ma-search-bar">
@@ -22,19 +26,19 @@
         </form>
     </div>
 
-    <! Navigation Container >
+    <!-- Navigation Container -->
     <div class="ma-header__nav-container">
         <nav>
             <ul class="ma-nav-list">
-                <! Log in button >
+                <!-- Log in button -->
                 <li class="ma-nav-list__item">
                     <button class="ma-nav-list__item__btn">Log in</button>
                 </li>
-                <! Sign up button >
+                <!-- Sign up button -->
                 <li class="ma-nav-list__item">
                     <button class="ma-nav-list__item__btn">Sign up</button>
                 </li>
-                <! Avatar button >
+                <!-- Avatar button -->
                 <li>
                     <a class="ma-nav-list__item__btn link-reset" href>
                         <div class="content">
@@ -49,3 +53,32 @@
     </div>
 
 </header>
+
+
+<! DARK SUBNAV >
+<div class="ma-subnav ma-subnav--dark">
+  <nav class="container">
+    <div class="ma-subnav__item">
+        <a href>Overview</a>
+    </div>
+
+    <div class="ma-subnav__item">
+        <a href>Review</a>
+    </div>
+
+    <div class="ma-subnav__item active">
+        <a href>The Host</a>
+    </div>
+
+    <div class="ma-subnav__item">
+        <a href>Location</a>          
+    </div>
+  </nav>
+</div>
+
+
+<!-- To use feathericons -->
+<!-- reference: https://feathericons.com/ -->
+<script>
+  feather.replace()
+</script>

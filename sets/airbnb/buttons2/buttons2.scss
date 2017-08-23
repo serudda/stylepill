@@ -170,6 +170,7 @@ $button-google-icon-bg-path: '../images/google-icon.svg';
                     width: $button-google-icon-width;
                     height: $button-google-icon-height;
                     background: url($button-google-icon-bg-path);
+                    background-repeat: no-repeat;
                 }
             }
         }

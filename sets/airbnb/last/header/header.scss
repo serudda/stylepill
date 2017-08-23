@@ -8,7 +8,7 @@
 $logo-image-path: '../images/logo.svg';
 $photo-default-path: '../images/photo-default.svg';
 
-$header-font-family: "Lato","Helvetica Neue",Helvetica,"Roboto",sans-serif;
+$font-family: "Lato","Helvetica Neue",Helvetica,"Roboto",sans-serif;
 
 $header-search-icon-bg-path: '../images/search.svg';
 
@@ -57,6 +57,21 @@ $header-lg-nav-list-btn-padding: 0 16px;
 
 $header-lg-nav-list-btn-hover-border-bottom: 2px solid #767676;
 
+/// Subnav Variables
+$subnav-bg-color: #484848;
+$subnav-width: 100%;
+$subnav-height: 44px;
+$subnav-z-index: 200;
+$subnav-dark-item-font-weight: 100;
+$subnav-dark-item-font-size: 13px;
+$subnav-dark-item-line-height: 18px;
+$subnav-dark-item-padding: 12px 10px 9px 10px;
+$subnav-dark-item-active-font-weight: 100;
+$subnav-dark-item-active-border-bottom: 4px solid #bbb;
+$subnav-dark-item-font-color: #bbb;
+$subnav-dark-item-active-font-color: $white;
+$subnav-dark-item-font-color-hover: $white;
+
 /// END: VARIABLES
 
 .screen-reader-only {
@@ -78,6 +93,8 @@ $header-lg-nav-list-btn-hover-border-bottom: 2px solid #767676;
     display: inline-block;
 }
 
+
+/// Main Header
 .ma-header {
     height: $header-height;
     background: $header-bg-color;
@@ -85,7 +102,7 @@ $header-lg-nav-list-btn-hover-border-bottom: 2px solid #767676;
     display: block;
     width: $header-width;
     z-index: $header-z-index;
-    font-family: $header-font-family;
+    font-family: $font-family;
 
 
     /// HEADER_ELEMENTS
@@ -211,5 +228,48 @@ $header-lg-nav-list-btn-hover-border-bottom: 2px solid #767676;
     &--large {
         display: table;
         width: 100%;
+    }
+}
+
+.ma-subnav {
+    display: block;
+    width: $subnav-width;
+    z-index: $subnav-z-index;
+    font-family: $font-family;
+
+    /// Subnav Dark
+    &--dark & {
+
+        &__item {
+            font-weight: $subnav-dark-item-font-weight;
+            word-wrap: break-word;
+            font-size: $subnav-dark-item-font-size;
+            line-height: $subnav-dark-item-line-height;
+            letter-spacing: 0.2px;
+            display: inline-block;
+            padding: $subnav-dark-item-padding;
+
+            &.active {
+                font-weight: $subnav-dark-item-active-font-weight;
+                border-bottom: $subnav-dark-item-active-border-bottom;
+                a {
+                    color: $subnav-dark-item-active-font-color;
+                }
+            }
+
+            a {
+                color: $subnav-dark-item-font-color;
+                &:hover {
+                    color: $subnav-dark-item-font-color-hover;
+                    text-decoration: none;
+                }
+            }
+
+        }
+    }
+
+    &--dark {
+        background: $subnav-bg-color;
+        height: $subnav-height;
     }
 }

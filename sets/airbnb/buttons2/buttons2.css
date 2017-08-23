@@ -142,4 +142,5 @@
   width: 20px;
   height: 20px;
   background: url("../images/google-icon.svg");
+  background-repeat: no-repeat;
 }

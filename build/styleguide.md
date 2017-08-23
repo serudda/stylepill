@@ -232,7 +232,158 @@ A button used by Airbnb on Reviews and recommendations section. Use it adding th
         </span>
     </button>
 
-## The next set will arrive the next Wednesday, 23 Aug 2017!
+## Last Set: Airbnb special components <a class='ma-btn ma-btn--small ma-btn--minimal' style='float: right;top: 16px;' href='http://bit.ly/2uQ44ab'>Download set</a> <div style="font-size:20px;color:#FF5A5F;">Wednesday, 23 Aug 2017</div>
+
+### Main Header
+
+This component represents the main header of Airbnb, which contains a search bar, nav options list, and user avatar logged. Use it adding the class: `.ma-header` to the header html tag
+
+    @example
+    <!-- HEADER -->
+    <header class="ma-header ma-header--large">
+
+        <!-- Logo -->
+        <div class="ma-header__logo-container">
+            <a class="link-reset">
+                <div class="content">
+                    <div class="ma-logo"></div>
+                </div>
+            </a>
+        </div>
+
+        <!-- Search box -->
+        <div class="ma-header__search-container">
+            <form class="form-content hidden-xs">
+                <div class="ma-search-bar">
+                    <i class="ma-search-bar__icon" data-feather="search"></i>
+                    <label class="screen-reader-only" aria-hidden="true">Search</label>
+                    <input class="ma-search-bar__input" placeholder="Search" type="text">
+                </div>
+            </form>
+        </div>
+
+        <!-- Navigation Container -->
+        <div class="ma-header__nav-container">
+            <nav>
+                <ul class="ma-nav-list">
+                    <!-- Log in button -->
+                    <li class="ma-nav-list__item">
+                        <button class="ma-nav-list__item__btn">Log in</button>
+                    </li>
+                    <!-- Sign up button -->
+                    <li class="ma-nav-list__item">
+                        <button class="ma-nav-list__item__btn">Sign up</button>
+                    </li>
+                    <!-- Avatar button -->
+                    <li>
+                        <a class="ma-nav-list__item__btn link-reset" href>
+                            <div class="content">
+                                <div class="ma-avatar ma-avatar--tiny ma-avatar--border-minimal round">
+                                    <img width="32" height="32" src="{user_avatar_path}" alt="{username}">
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+
+
+    <!-- DARK SUBNAV -->
+    <div class="ma-subnav ma-subnav--dark">
+      <nav class="container">
+        <div class="ma-subnav__item">
+            <a href>Overview</a>
+        </div>
+
+        <div class="ma-subnav__item">
+            <a href>Review</a>
+        </div>
+
+        <div class="ma-subnav__item active">
+            <a href>The Host</a>
+        </div>
+
+        <div class="ma-subnav__item">
+            <a href>Location</a>          
+        </div>
+      </nav>
+    </div>
+
+
+    <!-- To use feathericons -->
+    <!-- reference: https://feathericons.com/ -->
+    <script>
+      feather.replace()
+    </script>
+
+
+### User profile avatar
+
+Every avatar image based on Airbnb avatar. This component includes: round and square, primary, secondary and minimal border, tiny, small, default and large size. Use it adding the class: `.ma-avatar`, and its respective type and size modifier (e.g. `.ma-avatar--tiny`, `.ma-avatar--large`, `.ma-avatar--border-primary`, `.ma-avatar--border-secondary`).
+
+    @example
+    <!-- tiny round avatar without border -->
+    <div class="ma-avatar ma-avatar--tiny round">
+        <img width="32" height="32" src="{avatar_default_path}" alt="{username}">
+    </div>
+
+    <!-- tiny round avatar with primary border -->
+    <div class="ma-avatar ma-avatar--tiny ma-avatar--border-primary round">
+        <img width="32" height="32" src="{avatar_default_path}" alt="{username}">
+    </div>
+
+    <!-- small round avatar without border -->
+    <div class="ma-avatar ma-avatar--small round">
+        <img width="70" height="70" src="{avatar_default_path}" alt="{username}">
+    </div>
+
+    <!-- small round avatar with secondary border -->
+    <div class="ma-avatar ma-avatar--small ma-avatar--border-secondary round">
+        <img width="70" height="70" src="{avatar_default_path}" alt="{username}">
+    </div>
+
+    <!-- default round avatar without border -->
+    <div class="ma-avatar ma-avatar--default round">
+        <img width="120" height="120" src="{avatar_default_path}" alt="{username}">
+    </div>
+
+    <!-- default round avatar with minimal border -->
+    <div class="ma-avatar ma-avatar--default ma-avatar--border-minimal round">
+        <img width="120" height="120" src="{avatar_default_path}" alt="{username}">
+    </div>
+
+    <!-- default square avatar without border -->
+    <div class="ma-avatar ma-avatar--default">
+        <img width="120" height="120" src="https://s3.amazonaws.com/waysily-img/stylepill/rands-avatar.jpg" alt="Rosita & Sergio">
+    </div>
+
+    <!-- default square avatar with minimal border -->
+    <div class="ma-avatar ma-avatar--default ma-avatar--border-minimal">
+        <img width="120" height="120" src="{avatar_default_path}" alt="{username}">
+    </div>
+
+
+### Special Search box
+
+Special Search Box used by Airbnb on its home page header. It has a beautiful effect on **input focus**. Use it adding the class: `ma-searchbox`
+
+    @example
+    <div class="ma-searchbox">
+        <div class="ma-searchbox__icon-container">
+            <i data-feather="search"></i>
+        </div>
+        <div class="ma-searchbox__input-container">
+            <input class="ma-searchbox__input-container__input" placeholder="Anywhere" type="text">
+        </div>
+    </div>
+
+    <!-- To use feathericons reference: https://feathericons.com/ -->
+    <script>
+      feather.replace()
+    </script>
 
 <br>
 
@@ -246,8 +397,10 @@ A button used by Airbnb on Reviews and recommendations section. Use it adding th
     link(rel='stylesheet' href='build/styles/app.min.css')
     link(rel='stylesheet' href='https://cdn.rawgit.com/styledown/styledown/v1.0.2/data/styledown.css')
     link(rel='stylesheet' href='https://fonts.googleapis.com/css?family=Source+Sans+Pro')
+    link(rel='stylesheet' href='https://fonts.googleapis.com/css?family=Lato')
     script(src='https://cdn.rawgit.com/styledown/styledown/v1.0.2/data/styledown.js')
     script(src='https://use.fontawesome.com/99e7a6e2c6.js')
+    script(src='https://unpkg.com/feather-icons/dist/feather.min.js')
 
 ### Body
 
