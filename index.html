@@ -11,17 +11,18 @@
   <link rel="stylesheet" href="build/styles/app.min.css">
   <link rel="stylesheet" href="https://cdn.rawgit.com/styledown/styledown/v1.0.2/data/styledown.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
   <script src="https://cdn.rawgit.com/styledown/styledown/v1.0.2/data/styledown.js"></script>
   <script src="https://use.fontawesome.com/99e7a6e2c6.js"></script>
+  <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
 </head>
 
 <body class="sg">
   <div class="jumbotron jumbotron-styleguide">
     <div class="container">
       <h1 style="font-weight:400">Stylepill</h1>
-      <p class="ma-p ma-p--small">Each component is open source, 100% editable, written with Sass, and using BEM methodology.</p>
       <p class="ma-p ma-p--default">Theme of the month:
-        <strong>Airbnb</strong>
+        <strong style="color: #FF5A5F">Airbnb</strong>
       </p>
       <hr>
       <p style="font-size:15px;font-weight:600" class="ma-p">Follow us on Twitter, we&apos;ll show you our works, triumphs, failures, 100% transparent.</p>
@@ -42,155 +43,447 @@
         }
       </style>
 
-      <section class="sg-section sg-section-set-1-airbnb-main-buttons-a-class-ma-btn-ma-btn-small-ma-btn-minimal-style-float-right-top-16px-href-http-bit-ly-2vqjzlv-download-set-a-div-style-font-size-20px-color-ff5a5f-wednesday-26-jul-2017-div-">
-        <h2 id="set-1-airbnb-main-buttons-a-class-ma-btn-ma-btn-small-ma-btn-minimal-style-float-right-top-16px-href-http-bit-ly-2vqjzlv-download-set-a-div-style-font-size-20px-color-ff5a5f-wednesday-26-jul-2017-div-" class="sg">Set #1: Airbnb main buttons
-          <a class="ma-btn ma-btn--small ma-btn--minimal sg" style="float: right;top: 16px;" href="http://bit.ly/2vQJzLV">Download set</a>
-          <div style="font-size:20px;color:#FF5A5F;" class="sg">Wednesday, 26 Jul 2017</div>
+      <section class="sg-section sg-section--last-set-airbnb-special-components-a-id-last-set-class-ma-btn-ma-btn-small-ma-btn-minimal-style-float-right-top-16px-href-http-bit-ly-2w3z976-download-set-a-div-style-font-size-20px-color-ff5a5f-wednesday-23-aug-2017-div-">
+        <h2 id="-last-set-airbnb-special-components-a-id-last-set-class-ma-btn-ma-btn-small-ma-btn-minimal-style-float-right-top-16px-href-http-bit-ly-2w3z976-download-set-a-div-style-font-size-20px-color-ff5a5f-wednesday-23-aug-2017-div-" class="sg">
+          <strong class="sg">Last Set</strong>: Airbnb special components
+          <a id="last-set" class="ma-btn ma-btn--small ma-btn--minimal sg" style="float: right;top: 16px;" href="http://bit.ly/2w3Z976">Download set</a>
+          <div style="font-size:20px;color:#FF5A5F;" class="sg">Wednesday, 23 Aug 2017</div>
         </h2>
-        <section class="sg-block sg-section-primary-button">
+        <section class="sg-block sg-section-main-header">
           <div class="sg-text">
-            <h3 id="primary-button" class="sg">Primary button</h3>
-            <p class="sg">A simple and minimalist button based on Airbnb primary color. Use it adding the modifier:
-              <code class="sg">.ma-btn--primary</code>
+            <h3 id="main-header" class="sg">Main Header</h3>
+            <p class="sg">This component represents the main header of Airbnb, which contains a search bar, nav options list, and user avatar logged. Use it adding the class:
+              <code class="sg">.ma-header</code>to the header html tag</p>
+          </div>
+          <div class="sg-example">
+            <div class="sg-canvas">
+              <!-- HEADER -->
+              <header class="ma-header ma-header--large">
+
+                <!-- Logo -->
+                <div class="ma-header__logo-container">
+                  <a class="link-reset">
+                    <div class="content">
+                      <div class="ma-logo"></div>
+                    </div>
+                  </a>
+                </div>
+
+                <!-- Search box -->
+                <div class="ma-header__search-container">
+                  <form class="form-content hidden-xs">
+                    <div class="ma-search-bar">
+                      <i class="ma-search-bar__icon" data-feather="search"></i>
+                      <label class="screen-reader-only" aria-hidden="true">Search</label>
+                      <input class="ma-search-bar__input" placeholder="Search" type="text">
+                    </div>
+                  </form>
+                </div>
+
+                <!-- Navigation Container -->
+                <div class="ma-header__nav-container">
+                  <nav>
+                    <ul class="ma-nav-list">
+                      <!-- Log in button -->
+                      <li class="ma-nav-list__item">
+                        <button class="ma-nav-list__item__btn">Log in</button>
+                      </li>
+                      <!-- Sign up button -->
+                      <li class="ma-nav-list__item">
+                        <button class="ma-nav-list__item__btn">Sign up</button>
+                      </li>
+                      <!-- Avatar button -->
+                      <li>
+                        <a class="ma-nav-list__item__btn link-reset" href="">
+                          <div class="content">
+                            <div class="ma-avatar ma-avatar--tiny ma-avatar--border-minimal round">
+                              <img width="32" height="32" src="{user_avatar_path}" alt="{username}">
+                            </div>
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+
+              </header>
+
+              <!-- DARK SUBNAV -->
+              <div class="ma-subnav ma-subnav--dark">
+                <nav class="container">
+                  <div class="ma-subnav__item">
+                    <a href="">Overview</a>
+                  </div>
+
+                  <div class="ma-subnav__item">
+                    <a href="">Review</a>
+                  </div>
+
+                  <div class="ma-subnav__item active">
+                    <a href="">The Host</a>
+                  </div>
+
+                  <div class="ma-subnav__item">
+                    <a href="">Location</a>
+                  </div>
+                </nav>
+              </div>
+
+              <!-- To use feathericons -->
+              <!-- reference: https://feathericons.com/ -->
+              <script>
+                feather.replace()
+              </script>
+            </div><pre class="sg-code"><span class="hljs-comment">&lt;!-- HEADER --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">header</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;ma-header ma-header--large&quot;</span>&gt;</span>
+
+  <span class="hljs-comment">&lt;!-- Logo --&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;ma-header__logo-container&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;link-reset&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;content&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;ma-logo&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+
+  <span class="hljs-comment">&lt;!-- Search box --&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;ma-header__search-container&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">form</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;form-content hidden-xs&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;ma-search-bar&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">i</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;ma-search-bar__icon&quot;</span> <span class="hljs-attribute">data-feather</span>=<span class="hljs-value">&quot;search&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">i</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;screen-reader-only&quot;</span> <span class="hljs-attribute">aria-hidden</span>=<span class="hljs-value">&quot;true&quot;</span>&gt;</span>Search<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;ma-search-bar__input&quot;</span> <span class="hljs-attribute">placeholder</span>=<span class="hljs-value">&quot;Search&quot;</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;text&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">form</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+
+  <span class="hljs-comment">&lt;!-- Navigation Container --&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;ma-header__nav-container&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">nav</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">ul</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;ma-nav-list&quot;</span>&gt;</span>
+        <span class="hljs-comment">&lt;!-- Log in button --&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;ma-nav-list__item&quot;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;ma-nav-list__item__btn&quot;</span>&gt;</span>Log in<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+        <span class="hljs-comment">&lt;!-- Sign up button --&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;ma-nav-list__item&quot;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;ma-nav-list__item__btn&quot;</span>&gt;</span>Sign up<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+        <span class="hljs-comment">&lt;!-- Avatar button --&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;ma-nav-list__item__btn link-reset&quot;</span> <span class="hljs-attribute">href</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;content&quot;</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;ma-avatar ma-avatar--tiny ma-avatar--border-minimal round&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">width</span>=<span class="hljs-value">&quot;32&quot;</span> <span class="hljs-attribute">height</span>=<span class="hljs-value">&quot;32&quot;</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">&quot;{user_avatar_path}&quot;</span> <span class="hljs-attribute">alt</span>=<span class="hljs-value">&quot;{username}&quot;</span>&gt;</span>
+              <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">nav</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-title">header</span>&gt;</span>
+
+<span class="hljs-comment">&lt;!-- DARK SUBNAV --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;ma-subnav ma-subnav--dark&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">nav</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;container&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;ma-subnav__item&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>&gt;</span>Overview<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;ma-subnav__item&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>&gt;</span>Review<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;ma-subnav__item active&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>&gt;</span>The Host<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;ma-subnav__item&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>&gt;</span>Location<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">nav</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+
+<span class="hljs-comment">&lt;!-- To use feathericons --&gt;</span>
+<span class="hljs-comment">&lt;!-- reference: https://feathericons.com/ --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">script</span>&gt;</span><span class="javascript">
+  feather.replace()
+</span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span></pre>
+          </div>
+        </section>
+        <section class="sg-block sg-section-user-profile-avatar">
+          <div class="sg-text">
+            <h3 id="user-profile-avatar" class="sg">User profile avatar</h3>
+            <p class="sg">Every avatar image based on Airbnb avatar. This component includes: round and square, primary, secondary and minimal border, tiny, small, default and large size. Use it adding the class:
+              <code class="sg">.ma-avatar</code>, and its respective type and size modifier (e.g.
+              <code class="sg">.ma-avatar--tiny</code>,
+              <code class="sg">.ma-avatar--large</code>,
+              <code class="sg">.ma-avatar--border-primary</code>,
+              <code class="sg">.ma-avatar--border-secondary</code>).</p>
+          </div>
+          <div class="sg-example">
+            <div class="sg-canvas">
+              <!-- tiny round avatar without border -->
+              <div class="ma-avatar ma-avatar--tiny round">
+                <img width="32" height="32" src="{avatar_default_path}" alt="{username}">
+              </div>
+
+              <!-- tiny round avatar with primary border -->
+              <div class="ma-avatar ma-avatar--tiny ma-avatar--border-primary round">
+                <img width="32" height="32" src="{avatar_default_path}" alt="{username}">
+              </div>
+
+              <!-- small round avatar without border -->
+              <div class="ma-avatar ma-avatar--small round">
+                <img width="70" height="70" src="{avatar_default_path}" alt="{username}">
+              </div>
+
+              <!-- small round avatar with secondary border -->
+              <div class="ma-avatar ma-avatar--small ma-avatar--border-secondary round">
+                <img width="70" height="70" src="{avatar_default_path}" alt="{username}">
+              </div>
+
+              <!-- default round avatar without border -->
+              <div class="ma-avatar ma-avatar--default round">
+                <img width="120" height="120" src="{avatar_default_path}" alt="{username}">
+              </div>
+
+              <!-- default round avatar with minimal border -->
+              <div class="ma-avatar ma-avatar--default ma-avatar--border-minimal round">
+                <img width="120" height="120" src="{avatar_default_path}" alt="{username}">
+              </div>
+
+              <!-- default square avatar without border -->
+              <div class="ma-avatar ma-avatar--default">
+                <img width="120" height="120" src="https://s3.amazonaws.com/waysily-img/stylepill/rands-avatar.jpg" alt="Rosita &amp; Sergio">
+              </div>
+
+              <!-- default square avatar with minimal border -->
+              <div class="ma-avatar ma-avatar--default ma-avatar--border-minimal">
+                <img width="120" height="120" src="{avatar_default_path}" alt="{username}">
+              </div>
+            </div><pre class="sg-code"><span class="hljs-comment">&lt;!-- tiny round avatar without border --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;ma-avatar ma-avatar--tiny round&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">width</span>=<span class="hljs-value">&quot;32&quot;</span> <span class="hljs-attribute">height</span>=<span class="hljs-value">&quot;32&quot;</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">&quot;{avatar_default_path}&quot;</span> <span class="hljs-attribute">alt</span>=<span class="hljs-value">&quot;{username}&quot;</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+
+<span class="hljs-comment">&lt;!-- tiny round avatar with primary border --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;ma-avatar ma-avatar--tiny ma-avatar--border-primary round&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">width</span>=<span class="hljs-value">&quot;32&quot;</span> <span class="hljs-attribute">height</span>=<span class="hljs-value">&quot;32&quot;</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">&quot;{avatar_default_path}&quot;</span> <span class="hljs-attribute">alt</span>=<span class="hljs-value">&quot;{username}&quot;</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+
+<span class="hljs-comment">&lt;!-- small round avatar without border --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;ma-avatar ma-avatar--small round&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">width</span>=<span class="hljs-value">&quot;70&quot;</span> <span class="hljs-attribute">height</span>=<span class="hljs-value">&quot;70&quot;</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">&quot;{avatar_default_path}&quot;</span> <span class="hljs-attribute">alt</span>=<span class="hljs-value">&quot;{username}&quot;</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+
+<span class="hljs-comment">&lt;!-- small round avatar with secondary border --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;ma-avatar ma-avatar--small ma-avatar--border-secondary round&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">width</span>=<span class="hljs-value">&quot;70&quot;</span> <span class="hljs-attribute">height</span>=<span class="hljs-value">&quot;70&quot;</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">&quot;{avatar_default_path}&quot;</span> <span class="hljs-attribute">alt</span>=<span class="hljs-value">&quot;{username}&quot;</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+
+<span class="hljs-comment">&lt;!-- default round avatar without border --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;ma-avatar ma-avatar--default round&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">width</span>=<span class="hljs-value">&quot;120&quot;</span> <span class="hljs-attribute">height</span>=<span class="hljs-value">&quot;120&quot;</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">&quot;{avatar_default_path}&quot;</span> <span class="hljs-attribute">alt</span>=<span class="hljs-value">&quot;{username}&quot;</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+
+<span class="hljs-comment">&lt;!-- default round avatar with minimal border --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;ma-avatar ma-avatar--default ma-avatar--border-minimal round&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">width</span>=<span class="hljs-value">&quot;120&quot;</span> <span class="hljs-attribute">height</span>=<span class="hljs-value">&quot;120&quot;</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">&quot;{avatar_default_path}&quot;</span> <span class="hljs-attribute">alt</span>=<span class="hljs-value">&quot;{username}&quot;</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+
+<span class="hljs-comment">&lt;!-- default square avatar without border --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;ma-avatar ma-avatar--default&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">width</span>=<span class="hljs-value">&quot;120&quot;</span> <span class="hljs-attribute">height</span>=<span class="hljs-value">&quot;120&quot;</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">&quot;https://s3.amazonaws.com/waysily-img/stylepill/rands-avatar.jpg&quot;</span> <span class="hljs-attribute">alt</span>=<span class="hljs-value">&quot;Rosita &amp; Sergio&quot;</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+
+<span class="hljs-comment">&lt;!-- default square avatar with minimal border --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;ma-avatar ma-avatar--default ma-avatar--border-minimal&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">width</span>=<span class="hljs-value">&quot;120&quot;</span> <span class="hljs-attribute">height</span>=<span class="hljs-value">&quot;120&quot;</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">&quot;{avatar_default_path}&quot;</span> <span class="hljs-attribute">alt</span>=<span class="hljs-value">&quot;{username}&quot;</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
+          </div>
+        </section>
+        <section class="sg-block sg-section-special-search-box">
+          <div class="sg-text">
+            <h3 id="special-search-box" class="sg">Special Search box</h3>
+            <p class="sg">Special Search Box used by Airbnb on its home page header. It has a beautiful effect on
+              <strong class="sg">input focus</strong>. Use it adding the class:
+              <code class="sg">ma-searchbox</code>
             </p>
           </div>
           <div class="sg-example">
             <div class="sg-canvas">
-              <button class="ma-btn ma-btn--small ma-btn--primary">
-                Log in
+              <div class="ma-searchbox">
+                <div class="ma-searchbox__icon-container">
+                  <i data-feather="search"></i>
+                </div>
+                <div class="ma-searchbox__input-container">
+                  <input class="ma-searchbox__input-container__input" placeholder="Anywhere" type="text">
+                </div>
+              </div>
+
+              <!-- To use feathericons reference: https://feathericons.com/ -->
+              <script>
+                feather.replace()
+              </script>
+            </div><pre class="sg-code"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;ma-searchbox&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;ma-searchbox__icon-container&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">i</span> <span class="hljs-attribute">data-feather</span>=<span class="hljs-value">&quot;search&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">i</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;ma-searchbox__input-container&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;ma-searchbox__input-container__input&quot;</span> <span class="hljs-attribute">placeholder</span>=<span class="hljs-value">&quot;Anywhere&quot;</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;text&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+
+<span class="hljs-comment">&lt;!-- To use feathericons reference: https://feathericons.com/ --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">script</span>&gt;</span><span class="javascript">
+  feather.replace()
+</span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span></pre>
+          </div>
+        </section>
+      </section>
+
+      <section class="sg-section sg-section--set-4-airbnb-social-buttons-helpful-buttons-a-class-ma-btn-ma-btn-small-ma-btn-minimal-style-float-right-top-16px-href-http-bit-ly-2uq44ab-download-set-a-div-style-font-size-20px-color-ff5a5f-wednesday-16-aug-2017-div-">
+        <h2 id="-set-4-airbnb-social-buttons-helpful-buttons-a-class-ma-btn-ma-btn-small-ma-btn-minimal-style-float-right-top-16px-href-http-bit-ly-2uq44ab-download-set-a-div-style-font-size-20px-color-ff5a5f-wednesday-16-aug-2017-div-" class="sg">
+          <strong class="sg">Set #4</strong>: Airbnb social buttons &amp; helpful buttons
+          <a class="ma-btn ma-btn--small ma-btn--minimal sg" style="float: right;top: 16px;" href="http://bit.ly/2uQ44ab">Download set</a>
+          <div style="font-size:20px;color:#FF5A5F;" class="sg">Wednesday, 16 Aug 2017</div>
+        </h2>
+        <section class="sg-block sg-section-facebook-button">
+          <div class="sg-text">
+            <h3 id="facebook-button" class="sg">Facebook button</h3>
+            <p class="sg">A simple and minimalist Facebook button based on Airbnb theme. Use it adding the modifier:
+              <code class="sg">.ma-btn--facebook</code>
+            </p>
+          </div>
+          <div class="sg-example">
+            <div class="sg-canvas">
+              <button class="ma-btn ma-btn--default ma-btn--facebook">
+                <div class="ma-btn__content">
+                  <div class="ma-btn__content__icon-container">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                  </div>
+                  <div class="space-left-2">
+                    <span>Log in with Facebook</span>
+                  </div>
+                </div>
               </button>
-            </div><pre class="sg-code"><span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;ma-btn ma-btn--small ma-btn--primary&quot;</span>&gt;</span>
-  Log in
+            </div><pre class="sg-code"><span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;ma-btn ma-btn--default ma-btn--facebook&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;ma-btn__content&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;ma-btn__content__icon-container&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">i</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;fa fa-facebook&quot;</span> <span class="hljs-attribute">aria-hidden</span>=<span class="hljs-value">&quot;true&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">i</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;space-left-2&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">span</span>&gt;</span>Log in with Facebook<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span></pre>
           </div>
         </section>
-        <section class="sg-block sg-section-secondary-button">
+        <section class="sg-block sg-section-google-button">
           <div class="sg-text">
-            <h3 id="secondary-button" class="sg">Secondary button</h3>
-            <p class="sg">A simple and minimalist button based on Airbnb secondary color. Use it adding the modifier:
-              <code class="sg">.ma-btn--secondary</code>
+            <h3 id="google-button" class="sg">Google button</h3>
+            <p class="sg">A simple and minimalist Google button based on Airbnb theme. Use it adding the modifier:
+              <code class="sg">.ma-btn--google</code>
             </p>
           </div>
           <div class="sg-example">
             <div class="sg-canvas">
-              <button class="ma-btn ma-btn--small ma-btn--secondary">
-                Log in
+              <button class="ma-btn ma-btn--default ma-btn--google">
+                <div class="ma-btn__content">
+                  <div class="ma-btn__content__icon-container">
+                    <!-- Google icon SVG -->
+                    <i class="google-icon"></i>
+                  </div>
+                  <div class="space-left-2">
+                    <span>Log in with Google</span>
+                  </div>
+                </div>
               </button>
-            </div><pre class="sg-code"><span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;ma-btn ma-btn--small ma-btn--secondary&quot;</span>&gt;</span>
-  Log in
+            </div><pre class="sg-code"><span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;ma-btn ma-btn--default ma-btn--google&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;ma-btn__content&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;ma-btn__content__icon-container&quot;</span>&gt;</span>
+      <span class="hljs-comment">&lt;!-- Google icon SVG --&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">i</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;google-icon&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">i</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;space-left-2&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">span</span>&gt;</span>Log in with Google<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span></pre>
           </div>
         </section>
-        <section class="sg-block sg-section-primary-outline-button">
+        <section class="sg-block sg-section-helpful-button">
           <div class="sg-text">
-            <h3 id="primary-outline-button" class="sg">Primary Outline button</h3>
-            <p class="sg">A simple and minimalist outline button based on Airbnb primary color. Use it adding the modifier:
-              <code class="sg">.ma-btn--primary-without-bg</code>
-            </p>
+            <h3 id="helpful-button" class="sg">Helpful button</h3>
+            <p class="sg">A button used by Airbnb on Reviews and recommendations section. Use it adding the modifier:
+              <code class="sg">.ma-btn--helpful</code>adding size and type modifiers (e.g.
+              <code class="sg">.ma-btn--small</code>,
+              <code class="sg">.ma-btn--primary</code>)</p>
           </div>
           <div class="sg-example">
             <div class="sg-canvas">
-              <button class="ma-btn ma-btn--small ma-btn--primary-without-bg">
-                Log in
+              <!-- Helpful Primary Button -->
+              <button class="ma-btn ma-btn--helpful ma-btn--helpful--small ma-btn--helpful--primary">
+                <span>
+                  <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+                  <div class="ma-btn--helpful__text">Helpful</div>
+                  <div class="ma-btn--helpful__count">3</div>
+                </span>
               </button>
-            </div><pre class="sg-code"><span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;ma-btn ma-btn--small ma-btn--primary-without-bg&quot;</span>&gt;</span>
-  Log in
+
+              <!-- Helpful Secondary Button -->
+              <button class="ma-btn ma-btn--helpful ma-btn--helpful--small ma-btn--helpful--secondary">
+                <span>
+                  <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+                  <div class="ma-btn--helpful__text">Helpful</div>
+                  <div class="ma-btn--helpful__count">3</div>
+                </span>
+              </button>
+
+              <!-- Helpful Minimal Button -->
+              <button class="ma-btn ma-btn--helpful ma-btn--helpful--small ma-btn--helpful--minimal">
+                <span>
+                  <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+                  <div class="ma-btn--helpful__text">Helpful</div>
+                  <div class="ma-btn--helpful__count">3</div>
+                </span>
+              </button>
+            </div><pre class="sg-code"><span class="hljs-comment">&lt;!-- Helpful Primary Button --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;ma-btn ma-btn--helpful ma-btn--helpful--small ma-btn--helpful--primary&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">i</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;fa fa-thumbs-o-up&quot;</span> <span class="hljs-attribute">aria-hidden</span>=<span class="hljs-value">&quot;true&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">i</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;ma-btn--helpful__text&quot;</span>&gt;</span>Helpful<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;ma-btn--helpful__count&quot;</span>&gt;</span>3<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+
+<span class="hljs-comment">&lt;!-- Helpful Secondary Button --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;ma-btn ma-btn--helpful ma-btn--helpful--small ma-btn--helpful--secondary&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">i</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;fa fa-thumbs-o-up&quot;</span> <span class="hljs-attribute">aria-hidden</span>=<span class="hljs-value">&quot;true&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">i</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;ma-btn--helpful__text&quot;</span>&gt;</span>Helpful<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;ma-btn--helpful__count&quot;</span>&gt;</span>3<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+
+<span class="hljs-comment">&lt;!-- Helpful Minimal Button --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;ma-btn ma-btn--helpful ma-btn--helpful--small ma-btn--helpful--minimal&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">i</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;fa fa-thumbs-o-up&quot;</span> <span class="hljs-attribute">aria-hidden</span>=<span class="hljs-value">&quot;true&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">i</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;ma-btn--helpful__text&quot;</span>&gt;</span>Helpful<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;ma-btn--helpful__count&quot;</span>&gt;</span>3<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span></pre>
           </div>
         </section>
       </section>
 
-      <section class="sg-section sg-section-set-2-airbnb-main-inputs-a-class-ma-btn-ma-btn-small-ma-btn-minimal-style-float-right-top-16px-href-http-bit-ly-2v9aoj5-download-set-a-div-style-font-size-20px-color-ff5a5f-wednesday-2-aug-2017-div-">
-        <h2 id="set-2-airbnb-main-inputs-a-class-ma-btn-ma-btn-small-ma-btn-minimal-style-float-right-top-16px-href-http-bit-ly-2v9aoj5-download-set-a-div-style-font-size-20px-color-ff5a5f-wednesday-2-aug-2017-div-" class="sg">Set #2: Airbnb main inputs
-          <a class="ma-btn ma-btn--small ma-btn--minimal sg" style="float: right;top: 16px;" href="http://bit.ly/2v9aOj5">Download set</a>
-          <div style="font-size:20px;color:#FF5A5F;" class="sg">Wednesday, 2 Aug 2017</div>
-        </h2>
-        <section class="sg-block sg-section-small-input">
-          <div class="sg-text">
-            <h3 id="small-input" class="sg">Small input</h3>
-            <p class="sg">Small input commonly used by Airbnb on its forms such as edit profile, account, or setting. Use it adding the modifier:
-              <code class="sg">.ma-input--small</code>
-            </p>
-          </div>
-          <div class="sg-example sg-slim">
-            <div class="sg-canvas">
-              <div class="form-group">
-                <label for="input1">Small Input Text</label>
-                <input id="input1" type="text" class="ma-input ma-input--small" placeholder="Name">
-              </div>
-            </div><pre class="sg-code"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;form-group&quot;</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">&quot;input1&quot;</span>&gt;</span>Small Input Text<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">&quot;input1&quot;</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;text&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;ma-input ma-input--small&quot;</span> <span class="hljs-attribute">placeholder</span>=<span class="hljs-value">&quot;Name&quot;</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
-          </div>
-        </section>
-        <section class="sg-block sg-section-default-input">
-          <div class="sg-text">
-            <h3 id="default-input" class="sg">Default input</h3>
-            <p class="sg">Default input commonly used by Airbnb on its forms such as edit profile, account, or setting. Use it adding the modifier:
-              <code class="sg">.ma-input--default</code>
-            </p>
-          </div>
-          <div class="sg-example sg-slim">
-            <div class="sg-canvas">
-              <div class="form-group">
-                <label for="input1">Default Input Text</label>
-                <input id="input1" type="text" class="ma-input ma-input--default" placeholder="Email Address">
-              </div>
-            </div><pre class="sg-code"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;form-group&quot;</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">&quot;input1&quot;</span>&gt;</span>Default Input Text<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">&quot;input1&quot;</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;text&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;ma-input ma-input--default&quot;</span> <span class="hljs-attribute">placeholder</span>=<span class="hljs-value">&quot;Email Address&quot;</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
-          </div>
-        </section>
-        <section class="sg-block sg-section-large-input">
-          <div class="sg-text">
-            <h3 id="large-input" class="sg">Large input</h3>
-            <p class="sg">Large input commonly used by Airbnb on its forms such as edit profile, account, or setting. Use it adding the modifier:
-              <code class="sg">.ma-input--large</code>
-            </p>
-          </div>
-          <div class="sg-example sg-slim">
-            <div class="sg-canvas">
-              <div class="form-group">
-                <label for="input1">Large Input Text</label>
-                <input id="input1" type="text" class="ma-input ma-input--large" placeholder="First Name">
-              </div>
-            </div><pre class="sg-code"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;form-group&quot;</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">&quot;input1&quot;</span>&gt;</span>Large Input Text<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">&quot;input1&quot;</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;text&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;ma-input ma-input--large&quot;</span> <span class="hljs-attribute">placeholder</span>=<span class="hljs-value">&quot;First Name&quot;</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
-          </div>
-        </section>
-        <section class="sg-block sg-section-default-invalid-input">
-          <div class="sg-text">
-            <h3 id="default-invalid-input" class="sg">Default Invalid input</h3>
-            <p class="sg">Default invalid input styles. Use it adding the modifier:
-              <code class="sg">.ma-input--invalid</code>
-            </p>
-          </div>
-          <div class="sg-example sg-slim">
-            <div class="sg-canvas">
-              <div class="form-group">
-                <label for="input5">Invalid Input Text</label>
-                <input id="input5" type="text" class="ma-input ma-input--default ma-input--invalid" placeholder="Invalid Input Text">
-                <p class="ma-msg ma-msg--small ma-msg--alert space-top-1">
-                  Name required.
-                </p>
-              </div>
-            </div><pre class="sg-code"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;form-group&quot;</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">&quot;input5&quot;</span>&gt;</span>Invalid Input Text<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">&quot;input5&quot;</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;text&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;ma-input ma-input--default ma-input--invalid&quot;</span> <span class="hljs-attribute">placeholder</span>=<span class="hljs-value">&quot;Invalid Input Text&quot;</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;ma-msg ma-msg--small ma-msg--alert space-top-1&quot;</span>&gt;</span>
-    Name required.
-  <span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
-          </div>
-        </section>
-      </section>
-
-      <section class="sg-section sg-section-set-3-airbnb-main-subnavs-a-class-ma-btn-ma-btn-small-ma-btn-minimal-style-float-right-top-16px-href-http-bit-ly-2wpxczp-download-set-a-div-style-font-size-20px-color-ff5a5f-wednesday-9-aug-2017-div-">
-        <h2 id="set-3-airbnb-main-subnavs-a-class-ma-btn-ma-btn-small-ma-btn-minimal-style-float-right-top-16px-href-http-bit-ly-2wpxczp-download-set-a-div-style-font-size-20px-color-ff5a5f-wednesday-9-aug-2017-div-" class="sg">Set #3: Airbnb main subnavs
+      <section class="sg-section sg-section--set-3-airbnb-main-subnavs-a-class-ma-btn-ma-btn-small-ma-btn-minimal-style-float-right-top-16px-href-http-bit-ly-2wpxczp-download-set-a-div-style-font-size-20px-color-ff5a5f-wednesday-9-aug-2017-div-">
+        <h2 id="-set-3-airbnb-main-subnavs-a-class-ma-btn-ma-btn-small-ma-btn-minimal-style-float-right-top-16px-href-http-bit-ly-2wpxczp-download-set-a-div-style-font-size-20px-color-ff5a5f-wednesday-9-aug-2017-div-" class="sg">
+          <strong class="sg">Set #3</strong>: Airbnb main subnavs
           <a class="ma-btn ma-btn--small ma-btn--minimal sg" style="float: right;top: 16px;" href="http://bit.ly/2wpxCzp">Download set</a>
           <div style="font-size:20px;color:#FF5A5F;" class="sg">Wednesday, 9 Aug 2017</div>
         </h2>
@@ -342,146 +635,156 @@
         </section>
       </section>
 
-      <section class="sg-section sg-section-set-4-airbnb-social-buttons-helpful-buttons-a-class-ma-btn-ma-btn-small-ma-btn-minimal-style-float-right-top-16px-href-http-bit-ly-2uq44ab-download-set-a-div-style-font-size-20px-color-ff5a5f-wednesday-16-aug-2017-div-">
-        <h2 id="set-4-airbnb-social-buttons-helpful-buttons-a-class-ma-btn-ma-btn-small-ma-btn-minimal-style-float-right-top-16px-href-http-bit-ly-2uq44ab-download-set-a-div-style-font-size-20px-color-ff5a5f-wednesday-16-aug-2017-div-" class="sg">Set #4: Airbnb social buttons &amp; helpful buttons
-          <a class="ma-btn ma-btn--small ma-btn--minimal sg" style="float: right;top: 16px;" href="http://bit.ly/2uQ44ab">Download set</a>
-          <div style="font-size:20px;color:#FF5A5F;" class="sg">Wednesday, 16 Aug 2017</div>
+      <section class="sg-section sg-section--set-2-airbnb-main-inputs-a-class-ma-btn-ma-btn-small-ma-btn-minimal-style-float-right-top-16px-href-http-bit-ly-2v9aoj5-download-set-a-div-style-font-size-20px-color-ff5a5f-wednesday-2-aug-2017-div-">
+        <h2 id="-set-2-airbnb-main-inputs-a-class-ma-btn-ma-btn-small-ma-btn-minimal-style-float-right-top-16px-href-http-bit-ly-2v9aoj5-download-set-a-div-style-font-size-20px-color-ff5a5f-wednesday-2-aug-2017-div-" class="sg">
+          <strong class="sg">Set #2</strong>: Airbnb main inputs
+          <a class="ma-btn ma-btn--small ma-btn--minimal sg" style="float: right;top: 16px;" href="http://bit.ly/2v9aOj5">Download set</a>
+          <div style="font-size:20px;color:#FF5A5F;" class="sg">Wednesday, 2 Aug 2017</div>
         </h2>
-        <section class="sg-block sg-section-facebook-button">
+        <section class="sg-block sg-section-small-input">
           <div class="sg-text">
-            <h3 id="facebook-button" class="sg">Facebook button</h3>
-            <p class="sg">A simple and minimalist Facebook button based on Airbnb theme. Use it adding the modifier:
-              <code class="sg">.ma-btn--facebook</code>
+            <h3 id="small-input" class="sg">Small input</h3>
+            <p class="sg">Small input commonly used by Airbnb on its forms such as edit profile, account, or setting. Use it adding the modifier:
+              <code class="sg">.ma-input--small</code>
             </p>
           </div>
-          <div class="sg-example">
+          <div class="sg-example sg-slim">
             <div class="sg-canvas">
-              <button class="ma-btn ma-btn--default ma-btn--facebook">
-                <div class="ma-btn__content">
-                  <div class="ma-btn__content__icon-container">
-                    <i class="fa fa-facebook" aria-hidden="true"></i>
-                  </div>
-                  <div class="space-left-2">
-                    <span>Log in with Facebook</span>
-                  </div>
-                </div>
-              </button>
-            </div><pre class="sg-code"><span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;ma-btn ma-btn--default ma-btn--facebook&quot;</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;ma-btn__content&quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;ma-btn__content__icon-container&quot;</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">i</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;fa fa-facebook&quot;</span> <span class="hljs-attribute">aria-hidden</span>=<span class="hljs-value">&quot;true&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">i</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;space-left-2&quot;</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">span</span>&gt;</span>Log in with Facebook<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span></pre>
+              <div class="form-group">
+                <label for="input1">Small Input Text</label>
+                <input id="input1" type="text" class="ma-input ma-input--small" placeholder="Name">
+              </div>
+            </div><pre class="sg-code"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;form-group&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">&quot;input1&quot;</span>&gt;</span>Small Input Text<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">&quot;input1&quot;</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;text&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;ma-input ma-input--small&quot;</span> <span class="hljs-attribute">placeholder</span>=<span class="hljs-value">&quot;Name&quot;</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
           </div>
         </section>
-        <section class="sg-block sg-section-google-button">
+        <section class="sg-block sg-section-default-input">
           <div class="sg-text">
-            <h3 id="google-button" class="sg">Google button</h3>
-            <p class="sg">A simple and minimalist Google button based on Airbnb theme. Use it adding the modifier:
-              <code class="sg">.ma-btn--google</code>
+            <h3 id="default-input" class="sg">Default input</h3>
+            <p class="sg">Default input commonly used by Airbnb on its forms such as edit profile, account, or setting. Use it adding the modifier:
+              <code class="sg">.ma-input--default</code>
             </p>
           </div>
-          <div class="sg-example">
+          <div class="sg-example sg-slim">
             <div class="sg-canvas">
-              <button class="ma-btn ma-btn--default ma-btn--google">
-                <div class="ma-btn__content">
-                  <div class="ma-btn__content__icon-container">
-                    <!-- Google icon SVG -->
-                    <i class="google-icon"></i>
-                  </div>
-                  <div class="space-left-2">
-                    <span>Log in with Google</span>
-                  </div>
-                </div>
-              </button>
-            </div><pre class="sg-code"><span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;ma-btn ma-btn--default ma-btn--google&quot;</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;ma-btn__content&quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;ma-btn__content__icon-container&quot;</span>&gt;</span>
-      <span class="hljs-comment">&lt;!-- Google icon SVG --&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">i</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;google-icon&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">i</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;space-left-2&quot;</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">span</span>&gt;</span>Log in with Google<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span></pre>
+              <div class="form-group">
+                <label for="input1">Default Input Text</label>
+                <input id="input1" type="text" class="ma-input ma-input--default" placeholder="Email Address">
+              </div>
+            </div><pre class="sg-code"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;form-group&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">&quot;input1&quot;</span>&gt;</span>Default Input Text<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">&quot;input1&quot;</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;text&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;ma-input ma-input--default&quot;</span> <span class="hljs-attribute">placeholder</span>=<span class="hljs-value">&quot;Email Address&quot;</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
           </div>
         </section>
-        <section class="sg-block sg-section-helpful-button">
+        <section class="sg-block sg-section-large-input">
           <div class="sg-text">
-            <h3 id="helpful-button" class="sg">Helpful button</h3>
-            <p class="sg">A button used by Airbnb on Reviews and recommendations section. Use it adding the modifier:
-              <code class="sg">.ma-btn--helpful</code>adding size and type modifiers (e.g.
-              <code class="sg">.ma-btn--small</code>,
-              <code class="sg">.ma-btn--primary</code>)</p>
+            <h3 id="large-input" class="sg">Large input</h3>
+            <p class="sg">Large input commonly used by Airbnb on its forms such as edit profile, account, or setting. Use it adding the modifier:
+              <code class="sg">.ma-input--large</code>
+            </p>
           </div>
-          <div class="sg-example">
+          <div class="sg-example sg-slim">
             <div class="sg-canvas">
-              <!-- Helpful Primary Button -->
-              <button class="ma-btn ma-btn--helpful ma-btn--helpful--small ma-btn--helpful--primary">
-                <span>
-                  <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
-                  <div class="ma-btn--helpful__text">Helpful</div>
-                  <div class="ma-btn--helpful__count">3</div>
-                </span>
-              </button>
-
-              <!-- Helpful Secondary Button -->
-              <button class="ma-btn ma-btn--helpful ma-btn--helpful--small ma-btn--helpful--secondary">
-                <span>
-                  <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
-                  <div class="ma-btn--helpful__text">Helpful</div>
-                  <div class="ma-btn--helpful__count">3</div>
-                </span>
-              </button>
-
-              <!-- Helpful Minimal Button -->
-              <button class="ma-btn ma-btn--helpful ma-btn--helpful--small ma-btn--helpful--minimal">
-                <span>
-                  <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
-                  <div class="ma-btn--helpful__text">Helpful</div>
-                  <div class="ma-btn--helpful__count">3</div>
-                </span>
-              </button>
-            </div><pre class="sg-code"><span class="hljs-comment">&lt;!-- Helpful Primary Button --&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;ma-btn ma-btn--helpful ma-btn--helpful--small ma-btn--helpful--primary&quot;</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">span</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">i</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;fa fa-thumbs-o-up&quot;</span> <span class="hljs-attribute">aria-hidden</span>=<span class="hljs-value">&quot;true&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">i</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;ma-btn--helpful__text&quot;</span>&gt;</span>Helpful<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;ma-btn--helpful__count&quot;</span>&gt;</span>3<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
-
-<span class="hljs-comment">&lt;!-- Helpful Secondary Button --&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;ma-btn ma-btn--helpful ma-btn--helpful--small ma-btn--helpful--secondary&quot;</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">span</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">i</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;fa fa-thumbs-o-up&quot;</span> <span class="hljs-attribute">aria-hidden</span>=<span class="hljs-value">&quot;true&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">i</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;ma-btn--helpful__text&quot;</span>&gt;</span>Helpful<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;ma-btn--helpful__count&quot;</span>&gt;</span>3<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
-
-<span class="hljs-comment">&lt;!-- Helpful Minimal Button --&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;ma-btn ma-btn--helpful ma-btn--helpful--small ma-btn--helpful--minimal&quot;</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">span</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">i</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;fa fa-thumbs-o-up&quot;</span> <span class="hljs-attribute">aria-hidden</span>=<span class="hljs-value">&quot;true&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">i</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;ma-btn--helpful__text&quot;</span>&gt;</span>Helpful<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;ma-btn--helpful__count&quot;</span>&gt;</span>3<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span></pre>
+              <div class="form-group">
+                <label for="input1">Large Input Text</label>
+                <input id="input1" type="text" class="ma-input ma-input--large" placeholder="First Name">
+              </div>
+            </div><pre class="sg-code"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;form-group&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">&quot;input1&quot;</span>&gt;</span>Large Input Text<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">&quot;input1&quot;</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;text&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;ma-input ma-input--large&quot;</span> <span class="hljs-attribute">placeholder</span>=<span class="hljs-value">&quot;First Name&quot;</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
+          </div>
+        </section>
+        <section class="sg-block sg-section-default-invalid-input">
+          <div class="sg-text">
+            <h3 id="default-invalid-input" class="sg">Default Invalid input</h3>
+            <p class="sg">Default invalid input styles. Use it adding the modifier:
+              <code class="sg">.ma-input--invalid</code>
+            </p>
+          </div>
+          <div class="sg-example sg-slim">
+            <div class="sg-canvas">
+              <div class="form-group">
+                <label for="input5">Invalid Input Text</label>
+                <input id="input5" type="text" class="ma-input ma-input--default ma-input--invalid" placeholder="Invalid Input Text">
+                <p class="ma-msg ma-msg--small ma-msg--alert space-top-1">
+                  Name required.
+                </p>
+              </div>
+            </div><pre class="sg-code"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;form-group&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">&quot;input5&quot;</span>&gt;</span>Invalid Input Text<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">&quot;input5&quot;</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;text&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;ma-input ma-input--default ma-input--invalid&quot;</span> <span class="hljs-attribute">placeholder</span>=<span class="hljs-value">&quot;Invalid Input Text&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;ma-msg ma-msg--small ma-msg--alert space-top-1&quot;</span>&gt;</span>
+    Name required.
+  <span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
           </div>
         </section>
       </section>
 
-      <section class="sg-section sg-section-the-next-set-will-arrive-the-next-wednesday-23-aug-2017-">
-        <h2 id="the-next-set-will-arrive-the-next-wednesday-23-aug-2017-" class="sg">The next set will arrive the next Wednesday, 23 Aug 2017!</h2>
-        <p class="sg">
-          <br class="sg">
-        </p>
+      <section class="sg-section sg-section--set-1-airbnb-main-buttons-a-class-ma-btn-ma-btn-small-ma-btn-minimal-style-float-right-top-16px-href-http-bit-ly-2vqjzlv-download-set-a-div-style-font-size-20px-color-ff5a5f-wednesday-26-jul-2017-div-">
+        <h2 id="-set-1-airbnb-main-buttons-a-class-ma-btn-ma-btn-small-ma-btn-minimal-style-float-right-top-16px-href-http-bit-ly-2vqjzlv-download-set-a-div-style-font-size-20px-color-ff5a5f-wednesday-26-jul-2017-div-" class="sg">
+          <strong class="sg">Set #1</strong>: Airbnb main buttons
+          <a class="ma-btn ma-btn--small ma-btn--minimal sg" style="float: right;top: 16px;" href="http://bit.ly/2vQJzLV">Download set</a>
+          <div style="font-size:20px;color:#FF5A5F;" class="sg">Wednesday, 26 Jul 2017</div>
+        </h2>
+        <section class="sg-block sg-section-primary-button">
+          <div class="sg-text">
+            <h3 id="primary-button" class="sg">Primary button</h3>
+            <p class="sg">A simple and minimalist button based on Airbnb primary color. Use it adding the modifier:
+              <code class="sg">.ma-btn--primary</code>
+            </p>
+          </div>
+          <div class="sg-example">
+            <div class="sg-canvas">
+              <button class="ma-btn ma-btn--small ma-btn--primary">
+                Log in
+              </button>
+            </div><pre class="sg-code"><span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;ma-btn ma-btn--small ma-btn--primary&quot;</span>&gt;</span>
+  Log in
+<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span></pre>
+          </div>
+        </section>
+        <section class="sg-block sg-section-secondary-button">
+          <div class="sg-text">
+            <h3 id="secondary-button" class="sg">Secondary button</h3>
+            <p class="sg">A simple and minimalist button based on Airbnb secondary color. Use it adding the modifier:
+              <code class="sg">.ma-btn--secondary</code>
+            </p>
+          </div>
+          <div class="sg-example">
+            <div class="sg-canvas">
+              <button class="ma-btn ma-btn--small ma-btn--secondary">
+                Log in
+              </button>
+            </div><pre class="sg-code"><span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;ma-btn ma-btn--small ma-btn--secondary&quot;</span>&gt;</span>
+  Log in
+<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span></pre>
+          </div>
+        </section>
+        <section class="sg-block sg-section-primary-outline-button">
+          <div class="sg-text">
+            <h3 id="primary-outline-button" class="sg">Primary Outline button</h3>
+            <p class="sg">A simple and minimalist outline button based on Airbnb primary color. Use it adding the modifier:
+              <code class="sg">.ma-btn--primary-without-bg</code>
+            </p>
+            <p class="sg">
+              <br class="sg">
+            </p>
+          </div>
+          <div class="sg-example">
+            <div class="sg-canvas">
+              <button class="ma-btn ma-btn--small ma-btn--primary-without-bg">
+                Log in
+              </button>
+            </div><pre class="sg-code"><span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;ma-btn ma-btn--small ma-btn--primary-without-bg&quot;</span>&gt;</span>
+  Log in
+<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span></pre>
+          </div>
+        </section>
       </section>
 
     </div>
